@@ -144,7 +144,7 @@ footer p { margin: 0.3rem 0; }
   <ul>
     <li>Usamos tus datos para que puedas tener una cuenta, entrar a Servicios Ya y usarlo de forma segura.</li>
     <li>No vendemos tus datos ni los usamos para publicidad. La web no tiene analítica ni publicidad.</li>
-    <li>Por WhatsApp solo te escribimos cuando alguien pide en la web un código para tu número, para entrar o para vincularlo a su cuenta (normalmente, vos), o cuando le escribís al bot.</li>
+    <li>Por WhatsApp solo te escribimos cuando alguien pide en la web un código para tu número, para entrar o para vincularlo a su cuenta (normalmente, vos), cuando le escribís al bot o cuando una persona que administra Servicios Ya te invita, después de confirmar que aceptaste recibir mensajes por WhatsApp.</li>
     <li>En la base de datos, hoy solo el texto de los mensajes de WhatsApp se borra solo (a los 90 días). Lo demás se guarda hasta que pidas eliminarlo. Lo detallamos en <a href="#conservacion">Cuánto tiempo los guardamos</a>.</li>
     <li>Podés pedir ver, corregir o eliminar tus datos escribiendo a <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</li>
   </ul>
@@ -200,13 +200,13 @@ footer p { margin: 0.3rem 0; }
     <li><strong>Lo que mandás:</strong> el texto que escribís, el botón que tocás o el texto de un aviso de WhatsApp (por ejemplo, que cambiaste de número). De fotos, audios, videos, documentos, stickers, ubicaciones o reacciones no guardamos el contenido: solo el tipo de mensaje.</li>
     <li><strong>Fechas y estados:</strong> la fecha de cada mensaje y el estado de los que te mandamos (enviado, entregado, leído o no entregado).</li>
   </ul>
-  <p>También guardamos los mensajes que te manda el sistema, sin el código (queda escrito “[código]”) y sin la dirección del enlace de ingreso.</p>
+  <p>También guardamos los mensajes que te manda el sistema, sin el código (queda escrito “[código]”) y sin la dirección del enlace de ingreso. De una invitación, solo que fue una invitación (queda escrito “[invitación]”).</p>
 
   <h3>Los que llegan de Google</h3>
   <p>Si elegís entrar con Google, tu navegador va a Google, que te identifica y sabe que estás entrando a Servicios Ya. Google nos pasa tu identificador de cuenta de Google, tu correo, si Google lo verificó y tu nombre. También nos pasa tu nombre de pila, tu apellido y el enlace a tu perfil, que no guardamos.</p>
   <ul>
     <li>Guardamos tu identificador de Google, para reconocerte la próxima vez.</li>
-    <li>Guardamos tu correo y tu nombre solo si con ese ingreso se crea una cuenta nueva. Si ya tenías una, no los cambiamos.</li>
+    <li>Guardamos tu correo y tu nombre solo si con ese ingreso se crea una cuenta nueva. Si ya tenías una, no los cambiamos. Si tu correo lo había cargado una persona que administra y estaba sin verificar, al vincular tu cuenta de Google lo marcamos como verificado.</li>
     <li>No guardamos tu foto ni las credenciales que emite Google.</li>
     <li>Si Google no confirma que tu correo está verificado, no creamos ni vinculamos ninguna cuenta.</li>
   </ul>
@@ -223,7 +223,11 @@ footer p { margin: 0.3rem 0; }
   </ul>
 
   <h3>Los que carga quien administra</h3>
-  <p>Si una persona que administra Servicios Ya te da de alta, carga tu correo, tu nombre y los roles que te asigna. Los roles (por ejemplo, Admin o User) definen qué podés hacer en el sistema. Si administrás el sistema, además queda registrado quién creó o cambió cada cuenta, cada rol y cada ajuste.</p>
+  <p>Si una persona que administra Servicios Ya te da de alta, carga tu correo, tu número de WhatsApp o los dos, tu nombre y los roles que te asigna. Los roles (por ejemplo, Admin o User) definen qué podés hacer en el sistema. Si administrás el sistema, además queda registrado quién creó o cambió cada cuenta, cada rol y cada ajuste.</p>
+  <p>El correo y el número que carga quedan <strong>sin verificar</strong> hasta que probás que son tuyos: cuando entrás con el código que te llega ahí o, si es el correo, cuando vinculás una cuenta de Google con esa dirección (la primera vez que entrás con esa cuenta de Google). Entrar con una cuenta de Google que ya estaba vinculada a tu cuenta no verifica el correo. El número también queda verificado cuando el bot te manda a ese chat el enlace para entrar. Si carga mal tu correo o tu número, la invitación le llega a otra persona, que con ella (o pidiendo un código) podría entrar a la cuenta que te crearon y ver sus datos. Si te pasa, escribinos.</p>
+  <p>Después, puede cambiar tu correo o tu número, y lo nuevo también queda sin verificar. Si cambia tu número, el chat del número anterior deja de estar asociado a tu cuenta y los enlaces de ingreso que el bot ya había mandado dejan de servir. También puede desvincular tu WhatsApp, por ejemplo si perdiste el teléfono: el número sale de tu cuenta, el bot deja de reconocer ese chat como de tu cuenta, los enlaces pendientes dejan de servir y se cierran todas tus sesiones en el momento. Lo puede hacer aunque no tengas otro medio para entrar.</p>
+  <p>Si tu cuenta estaba eliminada y te da de alta de nuevo con el mismo correo o número, se restaura esa misma cuenta, con el nombre y los roles del alta nueva. Lo que la cuenta conservaba, como el vínculo con Google, vuelve con ella.</p>
+  <p>Si te manda una invitación (ver <a href="#invitaciones">Si te invita una persona que administra</a>), guardamos a qué cuenta, por dónde (correo o WhatsApp), cuándo y quién la mandó. Si es por WhatsApp, guardamos además la confirmación de que aceptaste recibir mensajes (quién la dio y cuándo), el identificador que Meta le da al mensaje, con el que seguimos su estado de entrega (enviado, entregado, leído o no entregado), y si no se pudo mandar.</p>
 </section>
 
 <section aria-labelledby="usos">
@@ -234,7 +238,7 @@ footer p { margin: 0.3rem 0; }
     <li><strong>Contestarte por WhatsApp:</strong> reconocer tu número y responderte desde el bot.</li>
     <li><strong>Mostrarte el servicio a tu medida:</strong> en tu idioma, con las fechas en tu zona horaria y saludándote por tu nombre.</li>
     <li><strong>Seguridad:</strong> limitar pedidos e intentos, bloquear por un rato después de muchos intentos fallidos, cortar sesiones, evitar abusos y revisar qué pasó si algo sale mal. Del historial, te mostramos tu último ingreso en Mi perfil.</li>
-    <li><strong>Administración:</strong> que las personas autorizadas puedan dar de alta, editar, desactivar o eliminar cuentas y asignar roles.</li>
+    <li><strong>Administración:</strong> que las personas autorizadas puedan dar de alta, editar, desactivar o eliminar cuentas, asignar roles, desvincular un WhatsApp y mandar invitaciones por correo o por WhatsApp.</li>
     <li><strong>Funcionamiento técnico:</strong> detectar y corregir fallas.</li>
   </ul>
 
@@ -253,7 +257,7 @@ footer p { margin: 0.3rem 0; }
   <ul>
     <li><strong>Porque los necesitamos para darte el servicio que pedís.</strong> Sin tu correo o tu número no podemos crearte una cuenta ni dejarte entrar.</li>
     <li><strong>Para que el servicio sea seguro,</strong> para vos y para las demás personas. El historial de ingresos, los límites y los bloqueos son parte de darte el servicio.</li>
-    <li><strong>Con tu consentimiento,</strong> cuando nos das datos por tu cuenta: al escribirle al bot, al elegir entrar con Google o al completar tu perfil. Podés retirarlo cuando quieras (ver <a href="#derechos">Tus derechos</a>). Retirarlo no cambia lo que ya se hizo antes.</li>
+    <li><strong>Con tu consentimiento,</strong> cuando nos das datos por tu cuenta: al escribirle al bot, al elegir entrar con Google o al completar tu perfil. Para invitarte por WhatsApp, nos basamos en el consentimiento que le diste a la persona que administra y que ella confirma al invitarte (ver <a href="#invitaciones">Si te invita una persona que administra</a>). Podés retirarlo cuando quieras (ver <a href="#derechos">Tus derechos</a>). Retirarlo no cambia lo que ya se hizo antes.</li>
   </ul>
 </section>
 
@@ -267,8 +271,14 @@ footer p { margin: 0.3rem 0; }
     <li><strong>Se pidió en la web un código para entrar con tu número.</strong> Normalmente lo pedís vos. La web no puede saber quién escribe el número, así que también lo puede pedir otra persona. Solo mandamos estos códigos a números de los países habilitados (hoy, Argentina), y solo si el número tiene una cuenta o si el servicio acepta cuentas nuevas. Hay un límite de códigos por número y un tope diario (ver <a href="#seguridad">Cómo los protegemos</a>).</li>
     <li><strong>Alguien con una cuenta pidió vincular tu número a esa cuenta.</strong> Normalmente sos vos, desde Mi perfil, pero la web tampoco puede saber de quién es el número. Este código lo mandamos a cualquier número de los países habilitados, tenga o no una cuenta, aunque el servicio no acepte cuentas nuevas. Llega en el idioma de la cuenta que lo pidió y es el mismo mensaje que el del código para entrar. Sin el código no se vincula nada. Los límites por número y el tope diario valen también para estos códigos.</li>
     <li><strong>Le escribiste al bot.</strong> Te contestamos con un enlace para entrar a la web, con la opción de crear una cuenta (si el servicio acepta cuentas nuevas) o con un aviso si no podés entrar.</li>
+    <li><strong>Una persona que administra Servicios Ya te invitó.</strong> Te puede invitar al darte de alta o después, y por WhatsApp solo si confirma que aceptaste recibir mensajes por WhatsApp. El mensaje te saluda por tu nombre, te avisa que tu cuenta está activa y trae el botón <strong>Quiero entrar</strong>: si lo tocás, el bot te manda el enlace para entrar. También te puede invitar por correo: te llega un correo con un botón que lleva a la página de ingreso, donde entrás con un código, como siempre. El correo no trae un código ni un enlace para entrar. Te puede reenviar la invitación, pero no más de una vez por minuto (ver <a href="#invitaciones">Si te invita una persona que administra</a>).</li>
   </ol>
   <p>No te escribimos por ningún otro motivo y nunca con publicidad. Si alguna vez sumamos otro motivo, antes actualizamos esta política. Si te llega un código que no pediste, no se lo pases a nadie e ignoralo: vence a los 10 minutos. Con ese código, otra persona podría entrar con tu número o vincularlo a su cuenta.</p>
+
+  <h3 id="invitaciones">Si te invita una persona que administra</h3>
+  <p>Para invitarte por WhatsApp, la persona que administra tiene que confirmar en el sistema que aceptaste recibir mensajes de Servicios Ya por WhatsApp. Pedirte ese permiso antes de invitarte le toca a ella: el sistema no te lo pide a vos ni registra una aceptación tuya. Lo que guarda es su confirmación: quién la dio y cuándo. Si te llegó una invitación sin que lo hayas aceptado, escribinos.</p>
+  <p>Meta clasifica el mensaje de invitación como de “marketing”, porque no lo pediste vos. Esa categoría cambia cómo lo cobra Meta, no lo que dice: no es publicidad, solo te avisa que tu cuenta está activa y cómo entrar. Como Meta limita cuántos mensajes de marketing recibe cada persona, la invitación puede no llegarte.</p>
+  <p>Si ya no querés que te inviten por WhatsApp, escribinos. Hoy el sistema no tiene cómo anotar ese pedido. Lo que podemos hacer a mano es sacar tu número de tu cuenta: sin número no se te puede invitar por WhatsApp, aunque así tampoco vas a poder entrar con WhatsApp. El sistema no recuerda el pedido: si alguien vuelve a cargar tu número, te podría volver a invitar. Lo único que corta todos los mensajes es bloquear nuestro número en WhatsApp.</p>
 
   <h3>Si creás tu cuenta desde el chat</h3>
   <p>Si tocás <strong>Crear cuenta</strong>, creamos tu cuenta con tu número y usamos el nombre de tu perfil de WhatsApp como nombre de la cuenta. Lo podés cambiar después en Mi perfil.</p>
@@ -291,6 +301,7 @@ footer p { margin: 0.3rem 0; }
 
   <h3 id="dejar-de-recibir">Si no querés recibir más mensajes</h3>
   <p>Un código te puede llegar aunque no lo hayas pedido, si alguien escribe tu número en la web, para entrar o para vincularlo a su cuenta. Hoy el sistema no tiene una lista de números a los que no escribir, así que no podemos frenar esos códigos. Pedirnos que eliminemos tus datos tampoco alcanza: cualquier persona con una cuenta puede volver a pedir un código para vincular tu número y, si el servicio acepta cuentas nuevas, cualquiera puede pedir uno para entrar. Lo único que corta todos los mensajes es bloquear nuestro número en WhatsApp. Los límites por número y el tope diario acotan cuántos códigos te pueden llegar.</p>
+  <p>Una invitación, en cambio, solo te llega si una persona que administra confirma que aceptaste recibir mensajes por WhatsApp. Para no recibir más, mirá <a href="#invitaciones">Si te invita una persona que administra</a>.</p>
   <p>Si el mensaje del código trae un botón para avisar que no lo pediste y lo tocás, no te contestamos, pero eso no frena los próximos códigos. El toque nos llega como un mensaje tuyo: lo guardamos, junto con tu contacto de WhatsApp, como cualquier mensaje al bot (ver <a href="#mensajes-whatsapp">Qué guardamos de tus mensajes</a>).</p>
 
   <h3>Hablar con una persona</h3>
@@ -302,11 +313,11 @@ footer p { margin: 0.3rem 0; }
   <p>No vendemos, alquilamos ni cedemos tus datos. Solo los reciben estos proveedores, y solo en lo necesario para que el servicio funcione:</p>
   <ul>
     <li><strong>Meta (WhatsApp):</strong> manda y recibe los mensajes de WhatsApp. Recibe tu número y el contenido de cada mensaje (ver <a href="#whatsapp">WhatsApp</a>).</li>
-    <li><strong>Google:</strong> si entrás con Google, te identifica y nos pasa los datos que contamos arriba; en ese paso, Google actúa por su cuenta, según su propia política. Además, los correos con el código (para entrar o para agregar un correo a una cuenta) salen por el servicio de envío de Gmail, desde una cuenta de Gmail del responsable: Google recibe tu correo, el código y el texto del mensaje, y guarda una copia de cada correo en la carpeta Enviados de esa cuenta (ver <a href="#conservacion">Cuánto tiempo los guardamos</a>).</li>
+    <li><strong>Google:</strong> si entrás con Google, te identifica y nos pasa los datos que contamos arriba; en ese paso, Google actúa por su cuenta, según su propia política. Además, los correos con el código (para entrar o para agregar un correo a una cuenta) y las invitaciones salen por el servicio de envío de Gmail, desde una cuenta de Gmail del responsable: Google recibe tu correo y el texto del mensaje, que lleva el código o, en una invitación, puede llevar tu nombre, y guarda una copia de cada correo en la carpeta Enviados de esa cuenta (ver <a href="#conservacion">Cuánto tiempo los guardamos</a>).</li>
     <li><strong>Microsoft (Dev Tunnels):</strong> en esta etapa, los mensajes que llegan de WhatsApp pasan por un túnel de Microsoft para llegar a nuestro servidor. Por ese túnel pasan tu número, el nombre de tu perfil y el texto de tus mensajes.</li>
     <li><strong>Tu proveedor de correo</strong> recibe los correos que te mandamos.</li>
   </ul>
-  <p>Dentro de Servicios Ya, las personas que administran y tienen el permiso ven los datos de las cuentas: correo, número, nombre, si están activas, roles y fecha de alta. No ven tus mensajes de WhatsApp ni tu historial de ingresos.</p>
+  <p>Dentro de Servicios Ya, las personas que administran y tienen el permiso ven los datos de las cuentas: correo, número y si están verificados, nombre, si están activas, roles, fecha de alta y la última invitación (por dónde salió, cuándo y, si fue por WhatsApp, si te llegó y si la leíste). No ven tus mensajes de WhatsApp ni tu historial de ingresos.</p>
 </section>
 
 <section aria-labelledby="donde">
@@ -344,7 +355,11 @@ footer p { margin: 0.3rem 0; }
     </div>
     <div>
       <dt>Copia de los correos que te mandamos</dt>
-      <dd>Queda en la carpeta Enviados de la cuenta de Gmail que los manda, con tu dirección y el código (que vence a los 10 minutos), hasta que la borremos. Hoy no tiene un plazo de borrado automático.</dd>
+      <dd>Queda en la carpeta Enviados de la cuenta de Gmail que los manda, con tu dirección y el código (que vence a los 10 minutos) o, en una invitación, tu nombre, hasta que la borremos. Hoy no tiene un plazo de borrado automático.</dd>
+    </div>
+    <div>
+      <dt>Invitaciones (quién te invitó, cuándo, por dónde y, si fue por WhatsApp, la confirmación de tu consentimiento)</dt>
+      <dd>Hoy no tienen un plazo de borrado automático. Se conservan aunque la cuenta se elimine.</dd>
     </div>
     <div>
       <dt>Historial de ingresos (incluye la IP y los datos del navegador)</dt>
@@ -378,11 +393,11 @@ footer p { margin: 0.3rem 0; }
   <ul>
     <li><strong>Todo viaja cifrado:</strong> entre tu navegador y el servicio (HTTPS), y entre el servicio y sus proveedores.</li>
     <li><strong>Sin contraseñas:</strong> entrás con un código o un enlace de un solo uso, o con Google.</li>
-    <li><strong>En la base de datos, los códigos y los enlaces no se guardan:</strong> solo una huella (un “hash”) que sirve para comprobarlos y que no permite recuperarlos. Vencen a los 10 minutos, sirven una sola vez y cada código admite hasta 5 intentos. La copia de cada correo que queda en Gmail sí incluye el código (ver <a href="#conservacion">Cuánto tiempo los guardamos</a>).</li>
+    <li><strong>En la base de datos, los códigos y los enlaces no se guardan:</strong> solo una huella (un “hash”) que sirve para comprobarlos y que no permite recuperarlos. Vencen a los 10 minutos, sirven una sola vez y cada código admite hasta 5 intentos. La copia que queda en Gmail de cada correo con un código sí lo incluye (ver <a href="#conservacion">Cuánto tiempo los guardamos</a>).</li>
     <li><strong>Límites:</strong> hasta 5 códigos cada 15 minutos para un mismo correo o número, un tope diario de códigos por WhatsApp y límites por dirección IP. Valen para todos los códigos, sean para entrar o para agregar un correo o un número. Después de 10 intentos fallidos seguidos para entrar, la cuenta se bloquea durante 15 minutos.</li>
     <li><strong>Mensajes verificados:</strong> comprobamos la firma de Meta en cada mensaje que llega de WhatsApp y descartamos los que no la tienen.</li>
     <li><strong>Registros sin secretos:</strong> en los mensajes guardados, el código queda como “[código]” y el enlace de ingreso no se guarda. El historial de ingresos guarda el motivo de un fallo, nunca el código que se escribió.</li>
-    <li><strong>Sesiones:</strong> las credenciales de la web viven en la memoria de la pestaña, no en el almacenamiento del navegador, y la cookie de sesión no es accesible desde el código de la página. Al cerrar sesión, una de ellas pasa por la dirección de la página y puede quedar en el historial del navegador (ver <a href="#cookies">Cookies y almacenamiento del navegador</a>). Si una cuenta se desactiva o se elimina, sus sesiones se cortan en el momento.</li>
+    <li><strong>Sesiones:</strong> las credenciales de la web viven en la memoria de la pestaña, no en el almacenamiento del navegador, y la cookie de sesión no es accesible desde el código de la página. Al cerrar sesión, una de ellas pasa por la dirección de la página y puede quedar en el historial del navegador (ver <a href="#cookies">Cookies y almacenamiento del navegador</a>). Si una cuenta se desactiva o se elimina, o si una persona que administra le desvincula el WhatsApp, sus sesiones se cortan en el momento.</li>
     <li><strong>Acceso por permisos:</strong> solo las personas con el permiso correspondiente pueden ver y administrar cuentas.</li>
     <li><strong>Cuidá tus enlaces:</strong> el enlace de ingreso que manda el bot muestra, antes de entrar, a qué cuenta corresponde (tu nombre o tu correo, y tu número enmascarado). No lo compartas.</li>
   </ul>
@@ -438,7 +453,7 @@ footer p { margin: 0.3rem 0; }
   <h3>Qué hacemos</h3>
   <ul>
     <li><strong>Tu cuenta deja de funcionar enseguida.</strong> La eliminamos: deja de aparecer en el sistema, ya no sirve para entrar, se cierran todas tus sesiones en el momento y se anulan los enlaces de ingreso pendientes.</li>
-    <li><strong>El resto lo borramos a mano.</strong> Eliminar una cuenta desde el sistema la oculta y la bloquea, pero todavía no borra sus datos de la base. Por eso, lo que queda guardado lo borramos a mano. En la base de datos: los datos de tu cuenta, el vínculo con Google, el historial de ingresos, los códigos y enlaces que se pidieron, los registros de tus sesiones y, si le escribiste al bot, tu contacto de WhatsApp y tus mensajes. En la cuenta de Gmail que manda los correos: las copias de los que te mandamos, también de su papelera.</li>
+    <li><strong>El resto lo borramos a mano.</strong> Eliminar una cuenta desde el sistema la oculta y la bloquea, pero todavía no borra sus datos de la base. Por eso, lo que queda guardado lo borramos a mano. En la base de datos: los datos de tu cuenta, el vínculo con Google, el historial de ingresos, los códigos y enlaces que se pidieron, las invitaciones que te mandaron, los registros de tus sesiones y, si le escribiste al bot, tu contacto de WhatsApp y tus mensajes. En la cuenta de Gmail que manda los correos: las copias de los que te mandamos, también de su papelera.</li>
     <li><strong>Te contamos qué hicimos.</strong> En la respuesta te decimos qué borramos y, si conservamos algo, qué es y por qué.</li>
   </ul>
 

@@ -146,7 +146,7 @@ footer p { margin: 0.3rem 0; }
   <ul>
     <li>We use your data so you can have an account, sign in to Servicios Ya and use it safely.</li>
     <li>We don’t sell your data or use it for advertising. The website has no analytics and no ads.</li>
-    <li>On WhatsApp, we only message you when someone asks for a code for your number on the website, to sign in or to link it to their account (usually you), or when you message the bot.</li>
+    <li>On WhatsApp, we only message you when someone asks for a code for your number on the website, to sign in or to link it to their account (usually you), when you message the bot, or when someone who administers Servicios Ya invites you after confirming that you agreed to receive WhatsApp messages.</li>
     <li>In our database, only the text of WhatsApp messages is deleted automatically today (after 90 days). Everything else is kept until you ask us to delete it. See <a href="#retention">How long we keep it</a>.</li>
     <li>You can ask to see, correct or delete your data by emailing <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</li>
   </ul>
@@ -202,13 +202,13 @@ footer p { margin: 0.3rem 0; }
     <li><strong>What you send:</strong> the text you write, the button you tap, or the text of a WhatsApp notice (for example, that you changed your number). For photos, audio, videos, documents, stickers, locations or reactions, we don’t keep the content, only the type of message.</li>
     <li><strong>Dates and statuses:</strong> the date of each message and the status of the ones we send you (sent, delivered, read or not delivered).</li>
   </ul>
-  <p>We also keep the messages the system sends you, without the code (it’s replaced by the placeholder “[código]”) and without the address of the sign-in link.</p>
+  <p>We also keep the messages the system sends you, without the code (it’s replaced by the placeholder “[código]”) and without the address of the sign-in link. For an invitation, we only keep that it was an invitation (the placeholder “[invitación]”).</p>
 
   <h3>Data from Google</h3>
   <p>If you choose to sign in with Google, your browser goes to Google, which identifies you and knows you’re signing in to Servicios Ya. Google gives us your Google account identifier, your email address, whether Google has verified it, and your name. It also gives us your first name, last name and profile link, which we don’t keep.</p>
   <ul>
     <li>We keep your Google identifier so we can recognize you next time.</li>
-    <li>We keep your email and name only if that sign-in creates a new account. If you already had one, we don’t change them.</li>
+    <li>We keep your email and name only if that sign-in creates a new account. If you already had one, we don’t change them. If your email address was entered by an administrator and wasn’t verified yet, when we link your Google account, we mark it as verified.</li>
     <li>We don’t keep your photo or the credentials Google issues.</li>
     <li>If Google doesn’t confirm that your email is verified, we don’t create or link any account.</li>
   </ul>
@@ -225,7 +225,11 @@ footer p { margin: 0.3rem 0; }
   </ul>
 
   <h3>Data entered by administrators</h3>
-  <p>If someone who administers Servicios Ya adds you, they enter your email, your name and the roles they assign you. Roles (for example, Admin or User) determine what you can do in the system. If you administer the system, we also record who created or changed each account, role and setting.</p>
+  <p>If someone who administers Servicios Ya adds you, they enter your email, your WhatsApp number or both, your name and the roles they assign you. Roles (for example, Admin or User) determine what you can do in the system. If you administer the system, we also record who created or changed each account, role and setting.</p>
+  <p>The email address and number they enter stay <strong>unverified</strong> until you prove they’re yours: when you sign in with the code sent there or, for the email address, when you link a Google account with that address (the first time you sign in with that Google account). Signing in with a Google account that was already linked to yours doesn’t verify the email address. The number is also verified when the bot sends the sign-in link to that chat. If they mistype your email or number, the invitation will reach someone else, who could use it (or request a code) to sign in to the account created for you and see its data. If this happens, write to us.</p>
+  <p>Later, they can change your email address or number, and the new one also stays unverified. If they change your number, the chat of the previous number is no longer associated with your account, and any sign-in links the bot had already sent stop working. They can also unlink your WhatsApp, for example if you lost your phone: the number is removed from your account, the bot stops recognizing that chat as your account’s, pending sign-in links stop working and all your sessions end immediately. They can do this even if you have no other way to sign in.</p>
+  <p>If your account had been deleted and they add you again with the same email address or number, that same account is restored, with the name and roles of the new sign-up. Whatever the account had kept, such as the Google link, comes back with it.</p>
+  <p>If they send you an invitation (see <a href="#invitations">If an administrator invites you</a>), we record which account it’s for, how it was sent (email or WhatsApp), when and who sent it. If it’s by WhatsApp, we also record the confirmation that you agreed to receive messages (who gave it and when), the identifier Meta assigns to the message, which we use to track its delivery status (sent, delivered, read or not delivered), and whether it couldn’t be sent.</p>
 </section>
 
 <section aria-labelledby="purposes">
@@ -236,7 +240,7 @@ footer p { margin: 0.3rem 0; }
     <li><strong>Replying on WhatsApp:</strong> to recognize your number and answer you from the bot.</li>
     <li><strong>Tailoring the service to you:</strong> in your language, with dates in your time zone, greeting you by name.</li>
     <li><strong>Security:</strong> to limit requests and attempts, lock sign-in for a while after many failed attempts, end sessions, prevent abuse and look into what happened if something goes wrong. From your sign-in history, we show you your last sign-in in My profile.</li>
-    <li><strong>Administration:</strong> so that authorized people can add, edit, deactivate or delete accounts and assign roles.</li>
+    <li><strong>Administration:</strong> so that authorized people can add, edit, deactivate or delete accounts, assign roles, unlink a WhatsApp number and send invitations by email or WhatsApp.</li>
     <li><strong>Keeping things running:</strong> to detect and fix faults.</li>
   </ul>
 
@@ -255,7 +259,7 @@ footer p { margin: 0.3rem 0; }
   <ul>
     <li><strong>Because we need it to provide the service you ask for.</strong> Without your email or number we can’t create an account for you or let you sign in.</li>
     <li><strong>To keep the service secure</strong> for you and for everyone else. The sign-in history, rate limits and lockouts are part of providing the service.</li>
-    <li><strong>With your consent,</strong> when you choose to give us data: when you message the bot, choose to sign in with Google or fill in your profile. You can withdraw it at any time (see <a href="#rights">Your rights</a>). Withdrawing it doesn’t undo what was done before.</li>
+    <li><strong>With your consent,</strong> when you choose to give us data: when you message the bot, choose to sign in with Google or fill in your profile. To invite you on WhatsApp, we rely on the consent you gave the administrator, which they confirm when they invite you (see <a href="#invitations">If an administrator invites you</a>). You can withdraw it at any time (see <a href="#rights">Your rights</a>). Withdrawing it doesn’t undo what was done before.</li>
   </ul>
 </section>
 
@@ -269,8 +273,14 @@ footer p { margin: 0.3rem 0; }
     <li><strong>Someone asked for a code to sign in with your number on the website.</strong> Usually that’s you. The website can’t tell who types the number, so someone else can ask for it too. We only send these codes to numbers from enabled countries (currently Argentina), and only if the number has an account or the service is accepting new accounts. There’s a per-number limit on codes and a daily cap (see <a href="#security">How we protect it</a>).</li>
     <li><strong>Someone with an account asked to link your number to that account.</strong> Usually that’s you, from My profile, but the website can’t tell whose number it is either. We send this code to any number from the enabled countries, whether or not it has an account, even if the service isn’t accepting new accounts. It arrives in the language of the account that requested it and it’s the same message as the sign-in code. Without the code, nothing gets linked. The per-number limits and the daily cap apply to these codes too.</li>
     <li><strong>You messaged the bot.</strong> We reply with a link to sign in on the website, with the option to create an account (if the service is accepting new accounts), or with a notice if you can’t sign in.</li>
+    <li><strong>Someone who administers Servicios Ya invited you.</strong> They can invite you when they add you or later, and on WhatsApp only if they confirm that you agreed to receive WhatsApp messages. The message greets you by name, tells you your account is active and has an <strong>I want to sign in</strong> button: if you tap it, the bot sends you the sign-in link. They can also invite you by email: you get an email with a button to the sign-in page, where you sign in with a code, as usual. The email doesn’t contain a code or a sign-in link. They can resend the invitation, but no more than once a minute (see <a href="#invitations">If an administrator invites you</a>).</li>
   </ol>
   <p>We don’t message you for any other reason, and never with advertising. If we ever add another reason, we’ll update this policy first. If you get a code you didn’t ask for, don’t share it with anyone and ignore it: it expires after 10 minutes. With that code, someone else could sign in with your number or link it to their account.</p>
+
+  <h3 id="invitations">If an administrator invites you</h3>
+  <p>To invite you on WhatsApp, the administrator has to confirm in the system that you agreed to receive WhatsApp messages from Servicios Ya. Asking for your permission before inviting you is up to them: the system doesn’t ask you for it or record an acceptance from you. What it keeps is their confirmation: who gave it and when. If you got an invitation without having agreed to it, write to us.</p>
+  <p>Meta classifies the invitation message as “marketing”, because you didn’t ask for it. That category changes how Meta charges for it, not what it says: it isn’t advertising, it only tells you that your account is active and how to sign in. Because Meta limits how many marketing messages each person receives, the invitation may not reach you.</p>
+  <p>If you no longer want to be invited on WhatsApp, write to us. Today the system has no way to record that request. What we can do by hand is remove your number from your account: without a number you can’t be invited on WhatsApp, although you also won’t be able to sign in with WhatsApp. The system doesn’t remember the request: if someone enters your number again, they could invite you again. The only way to stop all messages is to block our number on WhatsApp.</p>
 
   <h3>If you create your account from the chat</h3>
   <p>If you tap <strong>Create account</strong>, we create your account with your number and use your WhatsApp profile name as the account name. You can change it later in My profile.</p>
@@ -293,6 +303,7 @@ footer p { margin: 0.3rem 0; }
 
   <h3 id="stop-messages">If you don’t want any more messages</h3>
   <p>A code can reach you even if you didn’t ask for it, when someone types your number on the website, to sign in or to link it to their account. Today the system has no list of numbers not to message, so we can’t stop those codes. Asking us to delete your data isn’t enough either: anyone with an account can request a code to link your number again and, if the service is accepting new accounts, anyone can request one to sign in. The only way to stop all messages is to block our number on WhatsApp. The per-number limits and the daily cap restrict how many codes can reach you.</p>
+  <p>An invitation, on the other hand, only reaches you if an administrator confirms that you agreed to receive WhatsApp messages. To stop receiving them, see <a href="#invitations">If an administrator invites you</a>.</p>
   <p>If the code message has a button to say you didn’t request it and you tap it, we don’t reply, but that doesn’t stop future codes. The tap reaches us as a message from you: we keep it, along with your WhatsApp contact, like any message to the bot (see <a href="#whatsapp-messages">What we keep from your messages</a>).</p>
 
   <h3>Talking to a person</h3>
@@ -304,11 +315,11 @@ footer p { margin: 0.3rem 0; }
   <p>We don’t sell, rent or hand over your data. Only these providers receive it, and only as far as the service needs:</p>
   <ul>
     <li><strong>Meta (WhatsApp):</strong> sends and receives WhatsApp messages. It receives your number and the content of each message (see <a href="#whatsapp">WhatsApp</a>).</li>
-    <li><strong>Google:</strong> if you sign in with Google, it identifies you and gives us the data described above; in that step Google acts on its own behalf, under its own policy. Also, emails with a code (to sign in or to add an email address to an account) are sent through Gmail’s sending service, from a Gmail account belonging to the data controller: Google receives your email address, the code and the text of the message, and keeps a copy of each email in that account’s Sent folder (see <a href="#retention">How long we keep it</a>).</li>
+    <li><strong>Google:</strong> if you sign in with Google, it identifies you and gives us the data described above; in that step Google acts on its own behalf, under its own policy. Also, emails with a code (to sign in or to add an email address to an account) and invitations are sent through Gmail’s sending service, from a Gmail account belonging to the data controller: Google receives your email address and the text of the message, which contains the code or, in an invitation, may contain your name, and keeps a copy of each email in that account’s Sent folder (see <a href="#retention">How long we keep it</a>).</li>
     <li><strong>Microsoft (Dev Tunnels):</strong> at this stage, messages coming in from WhatsApp go through a Microsoft tunnel to reach our server. Your number, your profile name and the text of your messages pass through that tunnel.</li>
     <li><strong>Your email provider</strong> receives the emails we send you.</li>
   </ul>
-  <p>Within Servicios Ya, people who administer it and have the right permission can see account details: email, number, name, whether the account is active, roles and creation date. They can’t see your WhatsApp messages or your sign-in history.</p>
+  <p>Within Servicios Ya, people who administer it and have the right permission can see account details: email, number and whether they’re verified, name, whether the account is active, roles, creation date and the last invitation (how it was sent, when and, if it was by WhatsApp, whether it reached you and whether you read it). They can’t see your WhatsApp messages or your sign-in history.</p>
 </section>
 
 <section aria-labelledby="storage">
@@ -346,7 +357,11 @@ footer p { margin: 0.3rem 0; }
     </div>
     <div>
       <dt>Copies of the emails we send you</dt>
-      <dd>They stay in the Sent folder of the Gmail account that sends them, with your email address and the code (which expires after 10 minutes), until we delete them. No automatic deletion period today.</dd>
+      <dd>They stay in the Sent folder of the Gmail account that sends them, with your email address and the code (which expires after 10 minutes) or, in an invitation, your name, until we delete them. No automatic deletion period today.</dd>
+    </div>
+    <div>
+      <dt>Invitations (who invited you, when, how and, if it was by WhatsApp, the confirmation of your consent)</dt>
+      <dd>No automatic deletion period today. They’re kept even if the account is deleted.</dd>
     </div>
     <div>
       <dt>Sign-in history (including IP address and browser details)</dt>
@@ -380,11 +395,11 @@ footer p { margin: 0.3rem 0; }
   <ul>
     <li><strong>Everything travels encrypted:</strong> between your browser and the service (HTTPS), and between the service and its providers.</li>
     <li><strong>No passwords:</strong> you sign in with a one-time code or link, or with Google.</li>
-    <li><strong>Codes and links aren’t stored in our database:</strong> only a fingerprint (a “hash”) that lets us check them but can’t be turned back into the code or link. They expire after 10 minutes, work only once, and each code allows up to 5 attempts. The copy of each email kept in Gmail does include the code (see <a href="#retention">How long we keep it</a>).</li>
+    <li><strong>Codes and links aren’t stored in our database:</strong> only a fingerprint (a “hash”) that lets us check them but can’t be turned back into the code or link. They expire after 10 minutes, work only once, and each code allows up to 5 attempts. The copy kept in Gmail of each email with a code does include it (see <a href="#retention">How long we keep it</a>).</li>
     <li><strong>Limits:</strong> up to 5 codes every 15 minutes for the same email or number, a daily cap on WhatsApp codes and limits per IP address. They apply to every code, whether it’s to sign in or to add an email address or number. After 10 failed sign-in attempts in a row, the account is locked for 15 minutes.</li>
     <li><strong>Verified messages:</strong> we check Meta’s signature on every message coming in from WhatsApp and discard any without it.</li>
     <li><strong>Records without secrets:</strong> in stored messages, the code is replaced by the placeholder “[código]” and the sign-in link isn’t stored. The sign-in history keeps the reason a sign-in failed, never the code that was typed.</li>
-    <li><strong>Sessions:</strong> the website’s credentials live in the tab’s memory, not in browser storage, and the session cookie can’t be read by the page’s code. When you sign out, one of them passes through the page address and may stay in your browser history (see <a href="#cookies">Cookies and browser storage</a>). If an account is deactivated or deleted, its sessions end immediately.</li>
+    <li><strong>Sessions:</strong> the website’s credentials live in the tab’s memory, not in browser storage, and the session cookie can’t be read by the page’s code. When you sign out, one of them passes through the page address and may stay in your browser history (see <a href="#cookies">Cookies and browser storage</a>). If an account is deactivated or deleted, or if an administrator unlinks its WhatsApp, its sessions end immediately.</li>
     <li><strong>Permission-based access:</strong> only people with the right permission can see and manage accounts.</li>
     <li><strong>Keep your links to yourself:</strong> the sign-in link the bot sends shows, before you sign in, which account it belongs to (your name or email, and your masked number). Don’t share it.</li>
   </ul>
@@ -440,7 +455,7 @@ footer p { margin: 0.3rem 0; }
   <h3>What we do</h3>
   <ul>
     <li><strong>Your account stops working right away.</strong> We delete it: it disappears from the system, can no longer be used to sign in, all your sessions end immediately and any pending sign-in links are cancelled.</li>
-    <li><strong>We erase the rest by hand.</strong> Deleting an account in the system hides and blocks it, but doesn’t yet erase its data from the database. So we erase what remains by hand. In the database: your account data, your Google link, your sign-in history, the codes and links that were requested, your session records and, if you messaged the bot, your WhatsApp contact and your messages. In the Gmail account that sends the emails: the copies of the ones we sent you, including from its trash.</li>
+    <li><strong>We erase the rest by hand.</strong> Deleting an account in the system hides and blocks it, but doesn’t yet erase its data from the database. So we erase what remains by hand. In the database: your account data, your Google link, your sign-in history, the codes and links that were requested, the invitations you were sent, your session records and, if you messaged the bot, your WhatsApp contact and your messages. In the Gmail account that sends the emails: the copies of the ones we sent you, including from its trash.</li>
     <li><strong>We tell you what we did.</strong> Our reply says what we erased and, if we kept anything, what it is and why.</li>
   </ul>
 
