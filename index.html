@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Política de privacidad · Servicios Ya</title>
+<meta name="description" content="Qué datos personales trata Servicios Ya, para qué, con quién los comparte, cuánto los guarda y cómo ver, corregir o eliminar tus datos.">
+<link rel="canonical" href="https://ezeellena2.github.io/privacidad/">
+<link rel="alternate" hreflang="es" href="https://ezeellena2.github.io/privacidad/">
+<link rel="alternate" hreflang="en" href="https://ezeellena2.github.io/privacidad/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Política de privacidad · Servicios Ya">
+<meta property="og:description" content="Qué datos personales trata Servicios Ya y cómo ver, corregir o eliminar tus datos.">
+<meta property="og:url" content="https://ezeellena2.github.io/privacidad/">
+<meta property="og:locale" content="es_AR">
+<style>
+:root {
+  --bg: #fcfcfa;
+  --text: #1c1c1a;
+  --muted: #53534d;
+  --accent: #0a5bb0;
+  --border: #dedcd4;
+  --surface: #f2f1ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151514;
+    --text: #ecebe6;
+    --muted: #b3b2aa;
+    --accent: #8cbcff;
+    --border: #3a3935;
+    --surface: #1f1f1d;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 70ch; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 40rem) { .wrap { padding: 0 24px; } }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.skip {
+  position: absolute; left: 16px; top: -100px;
+  background: var(--bg); color: var(--accent);
+  padding: 8px 12px; border: 2px solid var(--accent); border-radius: 6px;
+}
+.skip:focus { top: 8px; }
+.topbar {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 8px 16px; padding: 16px 0; border-bottom: 1px solid var(--border);
+}
+.service { margin: 0; font-weight: 650; letter-spacing: 0.01em; }
+.lang { margin: 0; }
+h1 {
+  font-size: clamp(1.9rem, 1.4rem + 2.2vw, 2.6rem);
+  line-height: 1.15; letter-spacing: -0.01em;
+  margin: 1.6rem 0 0.6rem;
+}
+.meta { margin: 0.15rem 0; color: var(--muted); }
+.meta strong { color: var(--text); font-weight: 600; }
+.lead { font-size: 1.125rem; margin: 1.4rem 0 0; }
+h2 {
+  font-size: 1.45rem; line-height: 1.25;
+  margin: 2.6rem 0 0.8rem; padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 16px;
+}
+h3 { font-size: 1.1rem; line-height: 1.3; margin: 1.7rem 0 0.4rem; scroll-margin-top: 16px; }
+p { margin: 0.8rem 0; }
+ul, ol { padding-left: 1.3em; margin: 0.8rem 0; }
+li + li { margin-top: 0.4em; }
+strong { font-weight: 650; }
+.summary {
+  margin-top: 2rem; padding: 4px 20px 8px;
+  background: var(--surface); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0;
+}
+.summary h2 { border-top: 0; margin-top: 0.8rem; padding-top: 0; font-size: 1.2rem; }
+.toc h2 { font-size: 1.2rem; }
+.toc ol { margin: 0; }
+.toc li { break-inside: avoid; margin: 0.2em 0; }
+@media (min-width: 44rem) { .toc ol { columns: 2; column-gap: 2.5rem; } }
+dl.plazos { margin: 1rem 0 0; }
+dl.plazos > div { padding: 12px 0; border-top: 1px solid var(--border); }
+dl.plazos > div:last-child { border-bottom: 1px solid var(--border); }
+dl.plazos dt { font-weight: 650; }
+dl.plazos dd { margin: 4px 0 0; }
+blockquote.leyenda {
+  margin: 1.2rem 0 0.4rem; padding: 14px 20px;
+  background: var(--surface); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0;
+}
+blockquote.leyenda p { margin: 0; }
+.fuente { margin-top: 0.4rem; font-size: 0.95rem; color: var(--muted); }
+footer {
+  margin-top: 3rem; padding: 20px 0 40px;
+  border-top: 1px solid var(--border); color: var(--muted); font-size: 0.95rem;
+}
+footer p { margin: 0.3rem 0; }
+@media print {
+  :root { --bg: #fff; --text: #000; --muted: #333; --accent: #000; --border: #999; --surface: #fff; }
+  body { font-size: 11pt; line-height: 1.45; }
+  .skip, .lang, .toc { display: none; }
+  .wrap { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  main a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.9em; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+  li, dl.plazos > div, blockquote { break-inside: avoid; page-break-inside: avoid; }
+  .summary, blockquote.leyenda { border: 1px solid #999; }
+  @page { margin: 18mm; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="wrap">
+
+<header>
+  <div class="topbar">
+    <p class="service">Servicios Ya</p>
+    <p class="lang"><a href="en/" hreflang="en" lang="en">Read in English</a></p>
+  </div>
+  <h1>Política de privacidad</h1>
+  <p class="meta">Vigente desde el <time datetime="2026-09-23">23 de septiembre de 2026</time></p>
+  <p class="meta">Responsable: <strong>Ezequiel Ellena</strong> · <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a></p>
+  <p class="meta">Domicilio: Rosario, Santa Fe, Argentina</p>
+</header>
+
+<main id="contenido">
+
+<p class="lead">Esta política explica qué datos personales trata Servicios Ya, para qué, con quién los comparte, cuánto tiempo los guarda y cómo podés ejercer tus derechos. Vale para el sitio web, para los correos que manda y para su asistente de WhatsApp (el bot).</p>
+<p>En la web, en los correos y en los mensajes del bot, Servicios Ya hoy aparece con el nombre de su sistema, “Arquitectura Base”. Es el mismo servicio, y esta política vale con los dos nombres.</p>
+
+<section class="summary" aria-labelledby="resumen">
+  <h2 id="resumen">En pocas palabras</h2>
+  <ul>
+    <li>Usamos tus datos para que puedas tener una cuenta, entrar a Servicios Ya y usarlo de forma segura.</li>
+    <li>No vendemos tus datos ni los usamos para publicidad. La web no tiene analítica ni publicidad.</li>
+    <li>Por WhatsApp solo te escribimos cuando alguien pide en la web un código para tu número (normalmente, vos) o cuando le escribís al bot.</li>
+    <li>En la base de datos, hoy solo el texto de los mensajes de WhatsApp se borra solo (a los 90 días). Lo demás se guarda hasta que pidas eliminarlo. Lo detallamos en <a href="#conservacion">Cuánto tiempo los guardamos</a>.</li>
+    <li>Podés pedir ver, corregir o eliminar tus datos escribiendo a <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</li>
+  </ul>
+</section>
+
+<nav class="toc" aria-labelledby="indice">
+  <h2 id="indice">Contenido</h2>
+  <ol>
+    <li><a href="#responsable">Quién es el responsable</a></li>
+    <li><a href="#datos">Qué datos tratamos y de dónde salen</a></li>
+    <li><a href="#usos">Para qué los usamos</a></li>
+    <li><a href="#base-legal">Por qué podemos usarlos</a></li>
+    <li><a href="#whatsapp">WhatsApp</a></li>
+    <li><a href="#compartir">Con quién los compartimos</a></li>
+    <li><a href="#donde">Dónde se guardan tus datos</a></li>
+    <li><a href="#conservacion">Cuánto tiempo los guardamos</a></li>
+    <li><a href="#seguridad">Cómo los protegemos</a></li>
+    <li><a href="#cookies">Cookies y almacenamiento del navegador</a></li>
+    <li><a href="#derechos">Tus derechos</a></li>
+    <li><a href="#eliminar-datos">Cómo eliminar tus datos</a></li>
+    <li><a href="#menores">Menores de edad</a></li>
+    <li><a href="#cambios">Cambios a esta política</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#autoridad">Autoridad de control</a></li>
+  </ol>
+</nav>
+
+<section aria-labelledby="responsable">
+  <h2 id="responsable">Quién es el responsable</h2>
+  <p>Servicios Ya es un servicio web con cuenta propia. Podés entrar con un código que te llega por correo o por WhatsApp, con tu cuenta de Google o con un enlace que te manda nuestro asistente de WhatsApp (el bot).</p>
+  <p>El responsable de tus datos es <strong>Ezequiel Ellena</strong>, persona humana, con domicilio en Rosario, Santa Fe, Argentina. Es quien decide para qué y cómo se usan tus datos, y quien atiende tus pedidos. Podés escribirle a <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</p>
+  <p>Servicios Ya está en una etapa inicial y todavía no funciona en servidores definitivos. Te contamos dónde están tus datos hoy en <a href="#donde">Dónde se guardan tus datos</a>.</p>
+</section>
+
+<section aria-labelledby="datos">
+  <h2 id="datos">Qué datos tratamos y de dónde salen</h2>
+
+  <h3>Los que nos das vos</h3>
+  <ul>
+    <li><strong>Tu correo electrónico</strong>, si entrás con correo. Es opcional: una cuenta puede tener solo un número de WhatsApp.</li>
+    <li><strong>Tu número de WhatsApp</strong>, si entrás con WhatsApp. Lo guardamos en formato internacional, junto con si está verificado.</li>
+    <li><strong>Tu nombre</strong>, si lo cargás en Mi perfil. Es opcional.</li>
+    <li><strong>Tu idioma</strong> (español o inglés) y <strong>tu zona horaria</strong>, que podés cambiar en Mi perfil. Al crear la cuenta, el idioma es el que está elegido en la web en ese momento (español, si no lo cambiaste) o, si entrás con Google, el que tiene configurado tu navegador, si es español o inglés (si no, español). Si te da de alta una persona que administra, es el que esa persona tiene elegido en la web. Si la cuenta la crea el bot, empieza en español. La zona horaria empieza siempre en la de Buenos Aires. Los correos y los mensajes de WhatsApp te llegan en el idioma de tu cuenta. Si todavía no tenés cuenta, el código te llega en el idioma elegido en la web al pedirlo, y el bot te escribe en español.</li>
+    <li><strong>Lo que le escribís al bot</strong> de WhatsApp (ver abajo).</li>
+  </ul>
+  <p>Para tener una cuenta hace falta, como mínimo, un correo o un número de WhatsApp: sin uno de los dos no podés entrar. Lo demás es opcional. Si escribís mal tu correo o tu número, el código no te llega o le llega a otra persona.</p>
+
+  <h3>Los que llegan de WhatsApp</h3>
+  <p>Cuando le escribís al bot, o cuando te mandamos un mensaje, WhatsApp (Meta) nos pasa:</p>
+  <ul>
+    <li><strong>Quién sos en WhatsApp:</strong> tu número, un identificador que WhatsApp le asigna a tu cuenta para este negocio y el nombre de tu perfil de WhatsApp. Los guardamos en cuanto le escribís al bot o tocás un botón de uno de nuestros mensajes, aunque no tengas una cuenta en Servicios Ya ni la crees.</li>
+    <li><strong>Lo que mandás:</strong> el texto que escribís, el botón que tocás o el texto de un aviso de WhatsApp (por ejemplo, que cambiaste de número). De fotos, audios, videos, documentos, stickers, ubicaciones o reacciones no guardamos el contenido: solo el tipo de mensaje.</li>
+    <li><strong>Fechas y estados:</strong> la fecha de cada mensaje y el estado de los que te mandamos (enviado, entregado, leído o no entregado).</li>
+  </ul>
+  <p>También guardamos los mensajes que te manda el sistema, sin el código de ingreso (queda escrito “[código]”) y sin la dirección del enlace de ingreso.</p>
+
+  <h3>Los que llegan de Google</h3>
+  <p>Si elegís entrar con Google, tu navegador va a Google, que te identifica y sabe que estás entrando a Servicios Ya. Google nos pasa tu identificador de cuenta de Google, tu correo, si Google lo verificó y tu nombre. También nos pasa tu nombre de pila, tu apellido y el enlace a tu perfil, que no guardamos.</p>
+  <ul>
+    <li>Guardamos tu identificador de Google, para reconocerte la próxima vez.</li>
+    <li>Guardamos tu correo y tu nombre solo si con ese ingreso se crea una cuenta nueva. Si ya tenías una, no los cambiamos.</li>
+    <li>No guardamos tu foto ni las credenciales que emite Google.</li>
+    <li>Si Google no confirma que tu correo está verificado, no creamos ni vinculamos ninguna cuenta.</li>
+  </ul>
+
+  <h3>Los que se generan al usar el servicio</h3>
+  <ul>
+    <li><strong>Pedidos de código:</strong> a qué correo o número se pidió, por qué canal, cuándo, si se mandó, si se usó y cuántos intentos fallidos tuvo. El código no se guarda. Guardamos el pedido aunque ese correo o número no tenga cuenta, también cuando no mandamos el código: así los límites funcionan igual para todos y nadie puede averiguar qué direcciones tienen cuenta.</li>
+    <li><strong>Enlaces de ingreso del bot:</strong> a qué cuenta corresponde cada enlace y sus fechas. El enlace no se guarda.</li>
+    <li><strong>Historial de ingresos:</strong> cada vez que alguien verifica un código, usa un enlace del bot o entra con Google, registramos con qué correo o número se presentó, por qué medio, si salió bien o por qué falló (nunca el código que escribió), la dirección IP, los datos del navegador (el “user agent”) y la fecha. Se registra también cuando esa persona no tiene cuenta.</li>
+    <li><strong>Sesión:</strong> los permisos de acceso que se emiten cuando entrás, con su estado y sus fechas (ver <a href="#cookies">Cookies</a>).</li>
+    <li><strong>Control de la cuenta:</strong> la fecha de alta, si está activa, los intentos fallidos recientes y los bloqueos temporales, y quién la creó o la modificó por última vez.</li>
+    <li><strong>Dirección IP para los límites:</strong> la usamos unos minutos, solo en memoria, para limitar la cantidad de pedidos. No se guarda.</li>
+    <li><strong>Registros técnicos (logs y trazas):</strong> sirven para encontrar problemas. Los logs dicen qué operación se hizo, en qué dirección de la web, y si falló. Las trazas de diagnóstico describen cada pedido a la web: la dirección pedida (que puede incluir el identificador interno de una cuenta o de un rol, pero no los valores que van después del “?”), los datos del navegador (el “user agent”), la respuesta y cuánto tardó, junto con las consultas a la base de datos y las llamadas a Meta y a Google que hizo ese pedido. Están pensados para no incluir códigos, enlaces, textos de mensajes ni correos, y los logs muestran los números enmascarados. La excepción es el registro de errores del motor de la base de datos, que puede incluir un dato de la operación que falló.</li>
+  </ul>
+
+  <h3>Los que carga quien administra</h3>
+  <p>Si una persona que administra Servicios Ya te da de alta, carga tu correo, tu nombre y los roles que te asigna. Los roles (por ejemplo, Admin o User) definen qué podés hacer en el sistema. Si administrás el sistema, además queda registrado quién creó o cambió cada cuenta, cada rol y cada ajuste.</p>
+</section>
+
+<section aria-labelledby="usos">
+  <h2 id="usos">Para qué los usamos</h2>
+  <ul>
+    <li><strong>Tu cuenta:</strong> crearla, mantenerla y mostrarte tus datos en Mi perfil.</li>
+    <li><strong>Dejarte entrar:</strong> mandarte el código por correo o por WhatsApp, reconocerte cuando entrás con Google y mandarte el enlace de ingreso cuando se lo pedís al bot.</li>
+    <li><strong>Contestarte por WhatsApp:</strong> reconocer tu número y responderte desde el bot.</li>
+    <li><strong>Mostrarte el servicio a tu medida:</strong> en tu idioma, con las fechas en tu zona horaria y saludándote por tu nombre.</li>
+    <li><strong>Seguridad:</strong> limitar pedidos e intentos, bloquear por un rato después de muchos intentos fallidos, cortar sesiones, evitar abusos y revisar qué pasó si algo sale mal. Del historial, te mostramos tu último ingreso en Mi perfil.</li>
+    <li><strong>Administración:</strong> que las personas autorizadas puedan dar de alta, editar, desactivar o eliminar cuentas y asignar roles.</li>
+    <li><strong>Funcionamiento técnico:</strong> detectar y corregir fallas.</li>
+  </ul>
+
+  <h3>Lo que no hacemos</h3>
+  <ul>
+    <li>No vendemos, alquilamos ni cedemos tus datos.</li>
+    <li>No los usamos para publicidad ni te mandamos promociones.</li>
+    <li>No armamos perfiles sobre vos ni tomamos decisiones automáticas que te afecten. Los bloqueos por intentos fallidos son una medida de seguridad y se levantan solos.</li>
+    <li>No usamos analítica, píxeles ni herramientas de seguimiento.</li>
+    <li>No usamos contraseñas, y por WhatsApp nunca te vamos a pedir datos de tarjetas, de cuentas bancarias ni de documentos.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="base-legal">
+  <h2 id="base-legal">Por qué podemos usarlos</h2>
+  <ul>
+    <li><strong>Porque los necesitamos para darte el servicio que pedís.</strong> Sin tu correo o tu número no podemos crearte una cuenta ni dejarte entrar.</li>
+    <li><strong>Para que el servicio sea seguro,</strong> para vos y para las demás personas. El historial de ingresos, los límites y los bloqueos son parte de darte el servicio.</li>
+    <li><strong>Con tu consentimiento,</strong> cuando nos das datos por tu cuenta: al escribirle al bot, al elegir entrar con Google o al completar tu perfil. Podés retirarlo cuando quieras (ver <a href="#derechos">Tus derechos</a>). Retirarlo no cambia lo que ya se hizo antes.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="whatsapp">
+  <h2 id="whatsapp">WhatsApp</h2>
+  <p>El ingreso con WhatsApp y el bot funcionan con la plataforma de WhatsApp Business de Meta (la API de WhatsApp Cloud).</p>
+
+  <h3>Cuándo te escribimos</h3>
+  <p>Solo en estos casos:</p>
+  <ol>
+    <li><strong>Se pidió en la web un código para tu número.</strong> Normalmente lo pedís vos, para entrar. La web no puede saber quién escribe el número, así que también lo puede pedir otra persona. Solo mandamos códigos a números de los países habilitados (hoy, Argentina), y solo si el número tiene una cuenta o si el servicio acepta cuentas nuevas. Hay un límite de códigos por número y un tope diario (ver <a href="#seguridad">Cómo los protegemos</a>).</li>
+    <li><strong>Le escribiste al bot.</strong> Te contestamos con un enlace para entrar a la web, con la opción de crear una cuenta (si el servicio acepta cuentas nuevas) o con un aviso si no podés entrar.</li>
+  </ol>
+  <p>No te escribimos por ningún otro motivo y nunca con publicidad. Si alguna vez sumamos otro motivo, antes actualizamos esta política. Si te llega un código que no pediste, no se lo pases a nadie e ignoralo: vence a los 10 minutos.</p>
+
+  <h3>Si creás tu cuenta desde el chat</h3>
+  <p>Si tocás <strong>Crear cuenta</strong>, creamos tu cuenta con tu número y usamos el nombre de tu perfil de WhatsApp como nombre de la cuenta. Lo podés cambiar después en Mi perfil.</p>
+
+  <h3 id="mensajes-whatsapp">Qué guardamos de tus mensajes y por cuánto tiempo</h3>
+  <ul>
+    <li>El texto que le escribís al bot, los botones que tocás y los avisos de WhatsApp. De fotos, audios, videos y otros archivos, solo el tipo de mensaje.</li>
+    <li>Los mensajes que te mandamos, sin el código y sin la dirección del enlace, con su estado de entrega (incluido si lo leíste).</li>
+    <li>El <strong>texto</strong> de los mensajes se borra a los <strong>90 días</strong>. Después queda el registro de cada mensaje sin el texto: su fecha, su tipo y su estado de entrega.</li>
+    <li>Tu contacto de WhatsApp (número, identificador y nombre de perfil) se conserva, aunque no tengas cuenta, hasta que pidas eliminarlo.</li>
+  </ul>
+  <p>Ninguna pantalla del sistema muestra tus mensajes: solo el responsable puede verlos, con acceso directo a la base de datos. Por ahora el chat solo sirve para entrar, así que no le mandes datos sensibles (por ejemplo, de salud) ni información que no haga falta.</p>
+
+  <h3>Qué recibe Meta</h3>
+  <p>Para mandar y recibir cada mensaje, Meta recibe tu número y el contenido del mensaje, que puede incluir tu nombre, el código de ingreso o el enlace para entrar. Meta trata esos datos para prestarnos el servicio de mensajería. Además, WhatsApp aplica su propia política de privacidad a tu cuenta de WhatsApp.</p>
+
+  <h3 id="dejar-de-recibir">Si no querés recibir más mensajes</h3>
+  <p>Un código te puede llegar aunque no lo hayas pedido, si alguien escribe tu número en la web. Hoy el sistema no tiene una lista de números a los que no escribir, así que no podemos frenar esos códigos. Pedirnos que eliminemos tus datos tampoco alcanza siempre: si el servicio acepta cuentas nuevas, cualquiera puede volver a pedir un código para tu número. Lo único que corta todos los mensajes es bloquear nuestro número en WhatsApp. Los límites por número y el tope diario acotan cuántos códigos te pueden llegar.</p>
+  <p>Si el mensaje del código trae un botón para avisar que no lo pediste y lo tocás, no te contestamos, pero eso no frena los próximos códigos. El toque nos llega como un mensaje tuyo: lo guardamos, junto con tu contacto de WhatsApp, como cualquier mensaje al bot (ver <a href="#mensajes-whatsapp">Qué guardamos de tus mensajes</a>).</p>
+
+  <h3>Hablar con una persona</h3>
+  <p>El bot responde solo. Para hablar con una persona, escribinos a <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</p>
+</section>
+
+<section aria-labelledby="compartir">
+  <h2 id="compartir">Con quién los compartimos</h2>
+  <p>No vendemos, alquilamos ni cedemos tus datos. Solo los reciben estos proveedores, y solo en lo necesario para que el servicio funcione:</p>
+  <ul>
+    <li><strong>Meta (WhatsApp):</strong> manda y recibe los mensajes de WhatsApp. Recibe tu número y el contenido de cada mensaje (ver <a href="#whatsapp">WhatsApp</a>).</li>
+    <li><strong>Google:</strong> si entrás con Google, te identifica y nos pasa los datos que contamos arriba; en ese paso, Google actúa por su cuenta, según su propia política. Además, los correos con el código salen por el servicio de envío de Gmail, desde una cuenta de Gmail del responsable: Google recibe tu correo, el código y el texto del mensaje, y guarda una copia de cada correo en la carpeta Enviados de esa cuenta (ver <a href="#conservacion">Cuánto tiempo los guardamos</a>).</li>
+    <li><strong>Microsoft (Dev Tunnels):</strong> en esta etapa, los mensajes que llegan de WhatsApp pasan por un túnel de Microsoft para llegar a nuestro servidor. Por ese túnel pasan tu número, el nombre de tu perfil y el texto de tus mensajes.</li>
+    <li><strong>Tu proveedor de correo</strong> recibe los correos que te mandamos.</li>
+  </ul>
+  <p>Dentro de Servicios Ya, las personas que administran y tienen el permiso ven los datos de las cuentas: correo, número, nombre, si están activas, roles y fecha de alta. No ven tus mensajes de WhatsApp ni tu historial de ingresos.</p>
+</section>
+
+<section aria-labelledby="donde">
+  <h2 id="donde">Dónde se guardan tus datos</h2>
+  <ul>
+    <li>Hoy, en esta etapa inicial, la base de datos de Servicios Ya está en un equipo propio del responsable, en Argentina.</li>
+    <li>Los mensajes de WhatsApp llegan a ese equipo por el túnel de Microsoft, que usa un servidor en Brasil.</li>
+    <li>Cuando el servicio pase a servidores definitivos, vamos a actualizar esta política con el proveedor y el país antes de mudar tus datos.</li>
+  </ul>
+
+  <h3>Datos fuera de Argentina</h3>
+  <p>Algunos proveedores tratan tus datos fuera de Argentina:</p>
+  <ul>
+    <li>Meta procesa los mensajes de WhatsApp en sus centros de datos, que pueden estar fuera de Argentina (por ejemplo, en Estados Unidos).</li>
+    <li>Google, con sede en Estados Unidos, trata los datos del ingreso con Google y los correos que salen por Gmail, incluida la copia que queda en la cuenta que los manda.</li>
+    <li>El túnel de Microsoft usa un servidor en Brasil.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="conservacion">
+  <h2 id="conservacion">Cuánto tiempo los guardamos</h2>
+  <p>En la base de datos, hoy solo el texto de los mensajes de WhatsApp tiene un plazo de borrado automático. Lo demás se conserva hasta que pidas eliminarlo (ver <a href="#eliminar-datos">Cómo eliminar tus datos</a>).</p>
+  <dl class="plazos">
+    <div>
+      <dt>Datos de tu cuenta (correo, número, nombre, idioma, zona horaria, roles y vínculo con Google)</dt>
+      <dd>Mientras tengas la cuenta. Si la cuenta se elimina, quedan guardados, ocultos, hasta que pidas borrarlos.</dd>
+    </div>
+    <div>
+      <dt>Códigos de ingreso</dt>
+      <dd>El código deja de servir a los 10 minutos o cuando se usa. El registro del pedido (sin el código) hoy no tiene un plazo de borrado automático.</dd>
+    </div>
+    <div>
+      <dt>Enlaces de ingreso del bot</dt>
+      <dd>Sirven una vez y vencen a los 10 minutos. El registro (sin el enlace) hoy no tiene un plazo de borrado automático.</dd>
+    </div>
+    <div>
+      <dt>Copia de los correos que te mandamos</dt>
+      <dd>Queda en la carpeta Enviados de la cuenta de Gmail que los manda, con tu dirección y el código (que vence a los 10 minutos), hasta que la borremos. Hoy no tiene un plazo de borrado automático.</dd>
+    </div>
+    <div>
+      <dt>Historial de ingresos (incluye la IP y los datos del navegador)</dt>
+      <dd>Hoy no tiene un plazo de borrado automático. Se conserva aunque la cuenta se elimine, porque es un registro de seguridad.</dd>
+    </div>
+    <div>
+      <dt>Texto de los mensajes de WhatsApp</dt>
+      <dd>90 días. Después se borra el texto y queda el registro del mensaje: su fecha, su tipo y su estado de entrega.</dd>
+    </div>
+    <div>
+      <dt>Contacto de WhatsApp (número, identificador y nombre de perfil)</dt>
+      <dd>Hoy no tiene un plazo de borrado automático, aunque no tengas cuenta.</dd>
+    </div>
+    <div>
+      <dt>Sesión</dt>
+      <dd>La cookie de sesión dura 30 días y se renueva con el uso. Los permisos de acceso de la web duran 15 minutos y se renuevan solos mientras usás el servicio. El registro de esos permisos queda en la base, hoy sin un plazo de borrado automático.</dd>
+    </div>
+    <div>
+      <dt>Dirección IP para los límites</dt>
+      <dd>Entre 1 y 15 minutos, solo en memoria.</dd>
+    </div>
+    <div>
+      <dt>Registros técnicos (logs y trazas)</dt>
+      <dd>Los logs del día a día y las trazas de diagnóstico quedan solo en la memoria del equipo donde corre el servicio y se descartan al apagarlo. Los avisos y errores quedan además en el registro de eventos de Windows de ese equipo, hasta que Windows los reemplaza por otros más nuevos. El motor de la base de datos lleva su propio registro de errores, que puede incluir un dato de la operación que falló (por ejemplo, un correo o un número repetido) y se conserva mientras exista el contenedor de la base. Ninguno tiene un plazo de borrado fijo.</dd>
+    </div>
+  </dl>
+</section>
+
+<section aria-labelledby="seguridad">
+  <h2 id="seguridad">Cómo los protegemos</h2>
+  <ul>
+    <li><strong>Todo viaja cifrado:</strong> entre tu navegador y el servicio (HTTPS), y entre el servicio y sus proveedores.</li>
+    <li><strong>Sin contraseñas:</strong> entrás con un código o un enlace de un solo uso, o con Google.</li>
+    <li><strong>En la base de datos, los códigos y los enlaces no se guardan:</strong> solo una huella (un “hash”) que sirve para comprobarlos y que no permite recuperarlos. Vencen a los 10 minutos, sirven una sola vez y cada código admite hasta 5 intentos. La copia de cada correo que queda en Gmail sí incluye el código (ver <a href="#conservacion">Cuánto tiempo los guardamos</a>).</li>
+    <li><strong>Límites:</strong> hasta 5 códigos cada 15 minutos para un mismo correo o número, un tope diario de códigos por WhatsApp y límites por dirección IP. Después de 10 intentos fallidos seguidos, la cuenta se bloquea durante 15 minutos.</li>
+    <li><strong>Mensajes verificados:</strong> comprobamos la firma de Meta en cada mensaje que llega de WhatsApp y descartamos los que no la tienen.</li>
+    <li><strong>Registros sin secretos:</strong> en los mensajes guardados, el código queda como “[código]” y el enlace de ingreso no se guarda. El historial de ingresos guarda el motivo de un fallo, nunca el código que se escribió.</li>
+    <li><strong>Sesiones:</strong> las credenciales de la web viven en la memoria de la pestaña, no en el almacenamiento del navegador, y la cookie de sesión no es accesible desde el código de la página. Al cerrar sesión, una de ellas pasa por la dirección de la página y puede quedar en el historial del navegador (ver <a href="#cookies">Cookies y almacenamiento del navegador</a>). Si una cuenta se desactiva o se elimina, sus sesiones se cortan en el momento.</li>
+    <li><strong>Acceso por permisos:</strong> solo las personas con el permiso correspondiente pueden ver y administrar cuentas.</li>
+    <li><strong>Cuidá tus enlaces:</strong> el enlace de ingreso que manda el bot muestra, antes de entrar, a qué cuenta corresponde (tu nombre o tu correo, y tu número enmascarado). No lo compartas.</li>
+  </ul>
+  <p>¿Encontraste un problema de seguridad? Escribinos a <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</p>
+</section>
+
+<section aria-labelledby="cookies">
+  <h2 id="cookies">Cookies y almacenamiento del navegador</h2>
+  <p>La web de Servicios Ya no usa cookies de publicidad ni de analítica, y no carga nada de otros sitios: ni fuentes, ni scripts, ni píxeles. Solo usa lo necesario para que puedas entrar.</p>
+
+  <h3>Cookies</h3>
+  <ul>
+    <li><strong>Cookie de sesión:</strong> te mantiene con la sesión abierta. Dura 30 días, se renueva con el uso y se mantiene aunque cierres el navegador. Se borra al cerrar sesión. Solo viaja por HTTPS y el código de la página no la puede leer.</li>
+    <li><strong>Cookies del ingreso con Google:</strong> dos cookies temporales que protegen el ida y vuelta con Google. Duran unos minutos y se borran al terminar el ingreso.</li>
+  </ul>
+
+  <h3>Almacenamiento del navegador</h3>
+  <ul>
+    <li><strong>Almacenamiento local (localStorage):</strong> tu idioma y si el menú lateral está abierto o cerrado. Quedan hasta que borres los datos del sitio; cerrar sesión no los borra.</li>
+    <li><strong>Almacenamiento de la pestaña (sessionStorage):</strong> datos temporales del ingreso: un valor de seguridad, la página a la que volver y, si falla el ingreso con Google, el código del error. Se borran al usarse o al cerrar la pestaña.</li>
+    <li><strong>Historial de la pestaña:</strong> el correo o el número que escribís para pedir un código queda en el historial de esa pestaña (no en la dirección de la página), para poder verificarlo y reenviarlo. Desaparece al cerrar la pestaña, salvo que el navegador la restaure.</li>
+    <li><strong>Credenciales de sesión:</strong> viven en la memoria de la pestaña y no se guardan en el almacenamiento del navegador. La excepción es el cierre de sesión: para que el servicio sepa qué sesión cerrar, la web le manda, dentro de la dirección de la página, la credencial que dice quién sos (el “ID token”). Esa credencial lleva tu identificador en el sistema, tu correo si tenés uno, tu nombre (o, si no cargaste uno, tu correo o tu número) y tus roles, así que esa dirección puede quedar en el historial del navegador. No sirve para entrar al servicio.</li>
+  </ul>
+  <p>Como todo esto hace falta para entrar, no te pedimos permiso para usarlo. Si bloqueás las cookies, es posible que no puedas entrar.</p>
+  <p>Esta página no usa cookies ni scripts. Está publicada en GitHub Pages, y GitHub puede registrar la dirección IP de quien la visita.</p>
+</section>
+
+<section aria-labelledby="derechos">
+  <h2 id="derechos">Tus derechos</h2>
+  <p>Tenés derecho a:</p>
+  <ul>
+    <li><strong>Acceder</strong> a tus datos: saber qué datos tenemos de vos. Es gratis cada seis meses, o antes si tenés un interés legítimo. Te respondemos dentro de los 10 días corridos. Una parte la ves en Mi perfil (tu correo, tu nombre, tu idioma, tu zona horaria y tu último ingreso). El resto, como tu historial de ingresos o tus mensajes de WhatsApp, pedilo por correo.</li>
+    <li><strong>Rectificarlos:</strong> corregir o actualizar tus datos. Tu nombre, tu idioma y tu zona horaria los cambiás vos en Mi perfil. Para corregir tu correo o tu número, escribinos. Lo hacemos dentro de los 5 días hábiles, sin costo.</li>
+    <li><strong>Suprimirlos:</strong> pedir que eliminemos tus datos, sin costo, dentro de los 5 días hábiles (ver <a href="#eliminar-datos">Cómo eliminar tus datos</a>). La ley permite no borrar un dato cuando hay una obligación legal de conservarlo o cuando borrarlo perjudica derechos de otras personas; si pasa, te explicamos por qué.</li>
+    <li><strong>Retirar tu consentimiento</strong> en cualquier momento, sin que eso cambie lo que ya se hizo.</li>
+  </ul>
+
+  <h3 id="como-pedirlo">Cómo pedirlo</h3>
+  <p>Escribí a <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>. No hace falta un formulario: contanos qué pedís y con qué correo o número usás Servicios Ya.</p>
+  <p>Antes de responder, confirmamos que el pedido es tuyo, para no entregarle ni borrarle tus datos a otra persona. Por ejemplo, podemos pedirte que nos escribas desde el correo de tu cuenta o que le mandes un mensaje al bot desde tu número. Solo te pedimos lo necesario para eso.</p>
+  <p>Si no te respondemos a tiempo o la respuesta no te conforma, podés reclamar ante la Agencia de Acceso a la Información Pública (ver <a href="#autoridad">Autoridad de control</a>).</p>
+</section>
+
+<section aria-labelledby="eliminar-datos">
+  <h2 id="eliminar-datos">Cómo eliminar tus datos</h2>
+  <p>Podés pedir que eliminemos tus datos en cualquier momento, tengas o no una cuenta: por ejemplo, si solo le escribiste al bot o pediste un código. Hoy no se puede hacer desde la web ni desde el bot: se pide por correo.</p>
+  <ol>
+    <li>Escribí a <a href="mailto:ezequielellena_003@hotmail.com?subject=Eliminar%20mis%20datos">ezequielellena_003@hotmail.com</a> con el asunto “Eliminar mis datos”.</li>
+    <li>Contanos con qué correo o con qué número de WhatsApp usaste Servicios Ya.</li>
+    <li>Confirmamos que el pedido es tuyo (ver <a href="#como-pedirlo">Cómo pedirlo</a>) y lo resolvemos dentro de los 5 días hábiles.</li>
+  </ol>
+
+  <h3>Qué hacemos</h3>
+  <ul>
+    <li><strong>Tu cuenta deja de funcionar enseguida.</strong> La eliminamos: deja de aparecer en el sistema, ya no sirve para entrar, se cierran todas tus sesiones en el momento y se anulan los enlaces de ingreso pendientes.</li>
+    <li><strong>El resto lo borramos a mano.</strong> Eliminar una cuenta desde el sistema la oculta y la bloquea, pero todavía no borra sus datos de la base. Por eso, lo que queda guardado lo borramos a mano. En la base de datos: los datos de tu cuenta, el vínculo con Google, el historial de ingresos, los códigos y enlaces que se pidieron, los registros de tus sesiones y, si le escribiste al bot, tu contacto de WhatsApp y tus mensajes. En la cuenta de Gmail que manda los correos: las copias de los que te mandamos, también de su papelera.</li>
+    <li><strong>Te contamos qué hicimos.</strong> En la respuesta te decimos qué borramos y, si conservamos algo, qué es y por qué.</li>
+  </ul>
+
+  <h3>Lo que no depende de nosotros</h3>
+  <ul>
+    <li>El chat con el bot sigue en tu WhatsApp hasta que lo borres vos, y los correos que te mandamos siguen en tu casilla.</li>
+    <li>Meta conserva por su cuenta los mensajes de WhatsApp durante un tiempo, como parte del envío (según su documentación, hasta 30 días).</li>
+    <li>Google aplica su propia política a tu cuenta de Google.</li>
+  </ul>
+  <p>Eliminar tus datos no siempre frena los mensajes de WhatsApp: mirá <a href="#dejar-de-recibir">Si no querés recibir más mensajes</a>.</p>
+</section>
+
+<section aria-labelledby="menores">
+  <h2 id="menores">Menores de edad</h2>
+  <p>Servicios Ya es para personas mayores de 18 años. No verificamos la edad de quien lo usa. Si sos madre, padre o tutor de una persona menor de 18 años y creés que nos dio sus datos, escribinos a <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a> y los eliminamos como se explica en <a href="#eliminar-datos">Cómo eliminar tus datos</a>.</p>
+</section>
+
+<section aria-labelledby="cambios">
+  <h2 id="cambios">Cambios a esta política</h2>
+  <p>Si cambiamos esta política, publicamos la nueva versión en esta misma dirección, con su fecha de vigencia arriba. Antes de sumar un dato, un uso o un proveedor nuevo, actualizamos esta política.</p>
+</section>
+
+<section aria-labelledby="contacto">
+  <h2 id="contacto">Contacto</h2>
+  <p>Para preguntas sobre esta política, para ejercer tus derechos o para reportar un problema de seguridad, escribile a Ezequiel Ellena a <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>. El bot de WhatsApp no atiende estas consultas.</p>
+</section>
+
+<section aria-labelledby="autoridad">
+  <h2 id="autoridad">Autoridad de control</h2>
+  <p>Si creés que no respetamos tus derechos, podés hacer un reclamo ante la Agencia de Acceso a la Información Pública (AAIP), el organismo que controla que se cumpla la Ley 25.326 de Protección de Datos Personales. Mirá <a href="https://www.argentina.gob.ar/servicio/denunciar-incumplimientos-de-la-ley-de-proteccion-de-datos-personales">cómo hacer un reclamo ante la AAIP</a>.</p>
+  <blockquote class="leyenda">
+    <p>LA AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales</p>
+  </blockquote>
+  <p class="fuente">Texto informativo de la <a href="https://www.argentina.gob.ar/normativa/nacional/norma-307621/texto">Resolución 14/2018 de la AAIP</a>, artículo 3.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Servicios Ya · Política de privacidad · Vigente desde el 23 de septiembre de 2026</p>
+  <p><a href="en/" hreflang="en" lang="en">Read in English</a></p>
+</footer>
+
+</div>
+</body>
+</html>

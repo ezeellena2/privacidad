@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy · Servicios Ya</title>
+<meta name="description" content="What personal data Servicios Ya handles, why, who it is shared with, how long it is kept and how to see, correct or delete your data.">
+<link rel="canonical" href="https://ezeellena2.github.io/privacidad/en/">
+<link rel="alternate" hreflang="es" href="https://ezeellena2.github.io/privacidad/">
+<link rel="alternate" hreflang="en" href="https://ezeellena2.github.io/privacidad/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy · Servicios Ya">
+<meta property="og:description" content="What personal data Servicios Ya handles and how to see, correct or delete your data.">
+<meta property="og:url" content="https://ezeellena2.github.io/privacidad/en/">
+<meta property="og:locale" content="en_US">
+<style>
+:root {
+  --bg: #fcfcfa;
+  --text: #1c1c1a;
+  --muted: #53534d;
+  --accent: #0a5bb0;
+  --border: #dedcd4;
+  --surface: #f2f1ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151514;
+    --text: #ecebe6;
+    --muted: #b3b2aa;
+    --accent: #8cbcff;
+    --border: #3a3935;
+    --surface: #1f1f1d;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 70ch; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 40rem) { .wrap { padding: 0 24px; } }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.skip {
+  position: absolute; left: 16px; top: -100px;
+  background: var(--bg); color: var(--accent);
+  padding: 8px 12px; border: 2px solid var(--accent); border-radius: 6px;
+}
+.skip:focus { top: 8px; }
+.topbar {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 8px 16px; padding: 16px 0; border-bottom: 1px solid var(--border);
+}
+.service { margin: 0; font-weight: 650; letter-spacing: 0.01em; }
+.lang { margin: 0; }
+h1 {
+  font-size: clamp(1.9rem, 1.4rem + 2.2vw, 2.6rem);
+  line-height: 1.15; letter-spacing: -0.01em;
+  margin: 1.6rem 0 0.6rem;
+}
+.meta { margin: 0.15rem 0; color: var(--muted); }
+.meta strong { color: var(--text); font-weight: 600; }
+.lead { font-size: 1.125rem; margin: 1.4rem 0 0; }
+h2 {
+  font-size: 1.45rem; line-height: 1.25;
+  margin: 2.6rem 0 0.8rem; padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 16px;
+}
+h3 { font-size: 1.1rem; line-height: 1.3; margin: 1.7rem 0 0.4rem; scroll-margin-top: 16px; }
+p { margin: 0.8rem 0; }
+ul, ol { padding-left: 1.3em; margin: 0.8rem 0; }
+li + li { margin-top: 0.4em; }
+strong { font-weight: 650; }
+.summary {
+  margin-top: 2rem; padding: 4px 20px 8px;
+  background: var(--surface); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0;
+}
+.summary h2 { border-top: 0; margin-top: 0.8rem; padding-top: 0; font-size: 1.2rem; }
+.toc h2 { font-size: 1.2rem; }
+.toc ol { margin: 0; }
+.toc li { break-inside: avoid; margin: 0.2em 0; }
+@media (min-width: 44rem) { .toc ol { columns: 2; column-gap: 2.5rem; } }
+dl.plazos { margin: 1rem 0 0; }
+dl.plazos > div { padding: 12px 0; border-top: 1px solid var(--border); }
+dl.plazos > div:last-child { border-bottom: 1px solid var(--border); }
+dl.plazos dt { font-weight: 650; }
+dl.plazos dd { margin: 4px 0 0; }
+blockquote.leyenda {
+  margin: 1.2rem 0 0.4rem; padding: 14px 20px;
+  background: var(--surface); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0;
+}
+blockquote.leyenda p { margin: 0; }
+blockquote.leyenda p + p { margin-top: 0.8rem; }
+.label { display: block; font-size: 0.9rem; font-weight: 650; color: var(--muted); margin-bottom: 0.2rem; }
+.fuente { margin-top: 0.4rem; font-size: 0.95rem; color: var(--muted); }
+footer {
+  margin-top: 3rem; padding: 20px 0 40px;
+  border-top: 1px solid var(--border); color: var(--muted); font-size: 0.95rem;
+}
+footer p { margin: 0.3rem 0; }
+@media print {
+  :root { --bg: #fff; --text: #000; --muted: #333; --accent: #000; --border: #999; --surface: #fff; }
+  body { font-size: 11pt; line-height: 1.45; }
+  .skip, .lang, .toc { display: none; }
+  .wrap { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  main a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.9em; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+  li, dl.plazos > div, blockquote { break-inside: avoid; page-break-inside: avoid; }
+  .summary, blockquote.leyenda { border: 1px solid #999; }
+  @page { margin: 18mm; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="wrap">
+
+<header>
+  <div class="topbar">
+    <p class="service">Servicios Ya</p>
+    <p class="lang"><a href="../" hreflang="es" lang="es">Leer en español</a></p>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective <time datetime="2026-09-23">September 23, 2026</time></p>
+  <p class="meta">Data controller: <strong>Ezequiel Ellena</strong> · <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a></p>
+  <p class="meta">Address: Rosario, Santa Fe, Argentina</p>
+</header>
+
+<main id="content">
+
+<p class="lead">This policy explains what personal data Servicios Ya handles, why, who it shares it with, how long it keeps it and how you can exercise your rights. It covers the website, the emails it sends and its WhatsApp assistant (the bot).</p>
+<p>On the website, in emails and in the bot’s messages, Servicios Ya currently appears under the name of its underlying system, “Arquitectura Base”. It’s the same service, and this policy applies under either name.</p>
+
+<section class="summary" aria-labelledby="at-a-glance">
+  <h2 id="at-a-glance">At a glance</h2>
+  <ul>
+    <li>We use your data so you can have an account, sign in to Servicios Ya and use it safely.</li>
+    <li>We don’t sell your data or use it for advertising. The website has no analytics and no ads.</li>
+    <li>On WhatsApp, we only message you when someone asks for a code for your number on the website (usually you) or when you message the bot.</li>
+    <li>In our database, only the text of WhatsApp messages is deleted automatically today (after 90 days). Everything else is kept until you ask us to delete it. See <a href="#retention">How long we keep it</a>.</li>
+    <li>You can ask to see, correct or delete your data by emailing <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</li>
+  </ul>
+</section>
+
+<nav class="toc" aria-labelledby="contents">
+  <h2 id="contents">Contents</h2>
+  <ol>
+    <li><a href="#controller">Who is responsible for your data</a></li>
+    <li><a href="#data">What data we handle and where it comes from</a></li>
+    <li><a href="#purposes">What we use it for</a></li>
+    <li><a href="#legal-basis">Why we’re allowed to use it</a></li>
+    <li><a href="#whatsapp">WhatsApp</a></li>
+    <li><a href="#sharing">Who we share it with</a></li>
+    <li><a href="#storage">Where your data is stored</a></li>
+    <li><a href="#retention">How long we keep it</a></li>
+    <li><a href="#security">How we protect it</a></li>
+    <li><a href="#cookies">Cookies and browser storage</a></li>
+    <li><a href="#rights">Your rights</a></li>
+    <li><a href="#delete-your-data">How to delete your data</a></li>
+    <li><a href="#minors">Minors</a></li>
+    <li><a href="#changes">Changes to this policy</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#authority">Supervisory authority</a></li>
+  </ol>
+</nav>
+
+<section aria-labelledby="controller">
+  <h2 id="controller">Who is responsible for your data</h2>
+  <p>Servicios Ya is a web service with its own accounts. You can sign in with a code sent to your email or to WhatsApp, with your Google account, or with a link sent by our WhatsApp assistant (the bot).</p>
+  <p>The person responsible for your data (the data controller) is <strong>Ezequiel Ellena</strong>, an individual based in Rosario, Santa Fe, Argentina, who decides why and how your data is used and handles your requests. You can write to Ezequiel at <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</p>
+  <p>Servicios Ya is at an early stage and doesn’t run on permanent servers yet. See <a href="#storage">Where your data is stored</a> for where your data is today.</p>
+</section>
+
+<section aria-labelledby="data">
+  <h2 id="data">What data we handle and where it comes from</h2>
+
+  <h3>Data you give us</h3>
+  <ul>
+    <li><strong>Your email address</strong>, if you sign in with email. It’s optional: an account can have just a WhatsApp number.</li>
+    <li><strong>Your WhatsApp number</strong>, if you sign in with WhatsApp. We store it in international format, along with whether it’s verified.</li>
+    <li><strong>Your name</strong>, if you add it in My profile. It’s optional.</li>
+    <li><strong>Your language</strong> (Spanish or English) and <strong>your time zone</strong>, which you can change in My profile. When your account is created, its language is the one selected on the website at that moment (Spanish, unless you changed it) or, if you sign in with Google, the one your browser is set to, if it’s Spanish or English (otherwise, Spanish). If an administrator adds you, it’s the language that administrator has selected on the website. If the bot creates the account, it starts in Spanish. The time zone always starts as Buenos Aires time. Emails and WhatsApp messages reach you in your account’s language. If you don’t have an account yet, the code reaches you in the language selected on the website when it was requested, and the bot writes to you in Spanish.</li>
+    <li><strong>What you send the bot</strong> on WhatsApp (see below).</li>
+  </ul>
+  <p>To have an account you need at least an email address or a WhatsApp number: without one of them you can’t sign in. Everything else is optional. If you mistype your email or number, the code won’t reach you or will reach someone else.</p>
+
+  <h3>Data from WhatsApp</h3>
+  <p>When you message the bot, or when we send you a message, WhatsApp (Meta) gives us:</p>
+  <ul>
+    <li><strong>Who you are on WhatsApp:</strong> your number, an identifier WhatsApp assigns to your account for this business, and your WhatsApp profile name. We keep them as soon as you message the bot or tap a button in one of our messages, even if you don’t have or create a Servicios Ya account.</li>
+    <li><strong>What you send:</strong> the text you write, the button you tap, or the text of a WhatsApp notice (for example, that you changed your number). For photos, audio, videos, documents, stickers, locations or reactions, we don’t keep the content, only the type of message.</li>
+    <li><strong>Dates and statuses:</strong> the date of each message and the status of the ones we send you (sent, delivered, read or not delivered).</li>
+  </ul>
+  <p>We also keep the messages the system sends you, without the sign-in code (it’s replaced by the placeholder “[código]”) and without the address of the sign-in link.</p>
+
+  <h3>Data from Google</h3>
+  <p>If you choose to sign in with Google, your browser goes to Google, which identifies you and knows you’re signing in to Servicios Ya. Google gives us your Google account identifier, your email address, whether Google has verified it, and your name. It also gives us your first name, last name and profile link, which we don’t keep.</p>
+  <ul>
+    <li>We keep your Google identifier so we can recognize you next time.</li>
+    <li>We keep your email and name only if that sign-in creates a new account. If you already had one, we don’t change them.</li>
+    <li>We don’t keep your photo or the credentials Google issues.</li>
+    <li>If Google doesn’t confirm that your email is verified, we don’t create or link any account.</li>
+  </ul>
+
+  <h3>Data generated when you use the service</h3>
+  <ul>
+    <li><strong>Code requests:</strong> which email or number a code was requested for, through which channel, when, whether it was sent, whether it was used and how many failed attempts it had. The code itself isn’t stored. We record the request even if that email or number has no account, and even when we don’t send the code: that way the limits work the same for everyone and nobody can find out which addresses have an account.</li>
+    <li><strong>Sign-in links from the bot:</strong> which account each link belongs to and its dates. The link itself isn’t stored.</li>
+    <li><strong>Sign-in history:</strong> every time someone verifies a code, uses a link from the bot or signs in with Google, we record the email or number they used, the sign-in method, whether it worked or why it failed (never the code they typed), the IP address, browser details (the “user agent”) and the date. This is recorded even when that person has no account.</li>
+    <li><strong>Session:</strong> the access grants issued when you sign in, with their status and dates (see <a href="#cookies">Cookies</a>).</li>
+    <li><strong>Account controls:</strong> the date the account was created, whether it’s active, recent failed attempts and temporary lockouts, and who created or last changed it.</li>
+    <li><strong>IP address for rate limits:</strong> we use it for a few minutes, in memory only, to limit the number of requests. It isn’t stored.</li>
+    <li><strong>Technical logs and traces:</strong> they help us find problems. Logs record which operation ran, at which website address, and whether it failed. Diagnostic traces describe each request to the website: the address requested (which may include the internal ID of an account or a role, but not the values after the “?”), browser details (the “user agent”), the response and how long it took, along with the database queries and calls to Meta and Google that the request made. They’re designed to leave out codes, links, message text and email addresses, and logs show phone numbers masked. The exception is the database engine’s error log, which may include a value from the operation that failed.</li>
+  </ul>
+
+  <h3>Data entered by administrators</h3>
+  <p>If someone who administers Servicios Ya adds you, they enter your email, your name and the roles they assign you. Roles (for example, Admin or User) determine what you can do in the system. If you administer the system, we also record who created or changed each account, role and setting.</p>
+</section>
+
+<section aria-labelledby="purposes">
+  <h2 id="purposes">What we use it for</h2>
+  <ul>
+    <li><strong>Your account:</strong> to create it, keep it running and show you your details in My profile.</li>
+    <li><strong>Signing you in:</strong> to send you a code by email or WhatsApp, recognize you when you sign in with Google, and send you a sign-in link when you ask the bot for one.</li>
+    <li><strong>Replying on WhatsApp:</strong> to recognize your number and answer you from the bot.</li>
+    <li><strong>Tailoring the service to you:</strong> in your language, with dates in your time zone, greeting you by name.</li>
+    <li><strong>Security:</strong> to limit requests and attempts, lock sign-in for a while after many failed attempts, end sessions, prevent abuse and look into what happened if something goes wrong. From your sign-in history, we show you your last sign-in in My profile.</li>
+    <li><strong>Administration:</strong> so that authorized people can add, edit, deactivate or delete accounts and assign roles.</li>
+    <li><strong>Keeping things running:</strong> to detect and fix faults.</li>
+  </ul>
+
+  <h3>What we don’t do</h3>
+  <ul>
+    <li>We don’t sell, rent or hand over your data.</li>
+    <li>We don’t use it for advertising or send you promotions.</li>
+    <li>We don’t build profiles about you or make automated decisions that affect you. Lockouts after failed attempts are a security measure and lift on their own.</li>
+    <li>We don’t use analytics, pixels or tracking tools.</li>
+    <li>We don’t use passwords, and we will never ask you for card, bank account or ID details on WhatsApp.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="legal-basis">
+  <h2 id="legal-basis">Why we’re allowed to use it</h2>
+  <ul>
+    <li><strong>Because we need it to provide the service you ask for.</strong> Without your email or number we can’t create an account for you or let you sign in.</li>
+    <li><strong>To keep the service secure</strong> for you and for everyone else. The sign-in history, rate limits and lockouts are part of providing the service.</li>
+    <li><strong>With your consent,</strong> when you choose to give us data: when you message the bot, choose to sign in with Google or fill in your profile. You can withdraw it at any time (see <a href="#rights">Your rights</a>). Withdrawing it doesn’t undo what was done before.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="whatsapp">
+  <h2 id="whatsapp">WhatsApp</h2>
+  <p>Signing in with WhatsApp and the bot run on Meta’s WhatsApp Business Platform (the WhatsApp Cloud API).</p>
+
+  <h3>When we message you</h3>
+  <p>Only in these cases:</p>
+  <ol>
+    <li><strong>Someone asked for a code for your number on the website.</strong> Usually that’s you, signing in. The website can’t tell who types the number, so someone else can ask for it too. We only send codes to numbers from enabled countries (currently Argentina), and only if the number has an account or the service is accepting new accounts. There’s a per-number limit on codes and a daily cap (see <a href="#security">How we protect it</a>).</li>
+    <li><strong>You messaged the bot.</strong> We reply with a link to sign in on the website, with the option to create an account (if the service is accepting new accounts), or with a notice if you can’t sign in.</li>
+  </ol>
+  <p>We don’t message you for any other reason, and never with advertising. If we ever add another reason, we’ll update this policy first. If you get a code you didn’t ask for, don’t share it with anyone and ignore it: it expires after 10 minutes.</p>
+
+  <h3>If you create your account from the chat</h3>
+  <p>If you tap <strong>Create account</strong>, we create your account with your number and use your WhatsApp profile name as the account name. You can change it later in My profile.</p>
+
+  <h3 id="whatsapp-messages">What we keep from your messages, and for how long</h3>
+  <ul>
+    <li>The text you send the bot, the buttons you tap and WhatsApp notices. For photos, audio, videos and other files, only the type of message.</li>
+    <li>The messages we send you, without the code or the link address, with their delivery status (including whether you read them).</li>
+    <li>The <strong>text</strong> of messages is deleted after <strong>90 days</strong>. After that, a record of each message remains without the text: its date, type and delivery status.</li>
+    <li>Your WhatsApp contact (number, identifier and profile name) is kept, even if you have no account, until you ask us to delete it.</li>
+  </ul>
+  <p>No screen in the system shows your messages: only the data controller can see them, with direct access to the database. For now the chat is only for signing in, so please don’t send it sensitive information (for example, about your health) or anything that isn’t needed.</p>
+
+  <h3>What Meta receives</h3>
+  <p>To send and receive each message, Meta receives your number and the content of the message, which may include your name, the sign-in code or the sign-in link. Meta handles that data to provide us with the messaging service. WhatsApp also applies its own privacy policy to your WhatsApp account.</p>
+
+  <h3 id="stop-messages">If you don’t want any more messages</h3>
+  <p>A code can reach you even if you didn’t ask for it, when someone types your number on the website. Today the system has no list of numbers not to message, so we can’t stop those codes. Asking us to delete your data isn’t always enough either: if the service is accepting new accounts, anyone can request a code for your number again. The only way to stop all messages is to block our number on WhatsApp. The per-number limits and the daily cap restrict how many codes can reach you.</p>
+  <p>If the code message has a button to say you didn’t request it and you tap it, we don’t reply, but that doesn’t stop future codes. The tap reaches us as a message from you: we keep it, along with your WhatsApp contact, like any message to the bot (see <a href="#whatsapp-messages">What we keep from your messages</a>).</p>
+
+  <h3>Talking to a person</h3>
+  <p>The bot replies automatically. To talk to a person, email <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</p>
+</section>
+
+<section aria-labelledby="sharing">
+  <h2 id="sharing">Who we share it with</h2>
+  <p>We don’t sell, rent or hand over your data. Only these providers receive it, and only as far as the service needs:</p>
+  <ul>
+    <li><strong>Meta (WhatsApp):</strong> sends and receives WhatsApp messages. It receives your number and the content of each message (see <a href="#whatsapp">WhatsApp</a>).</li>
+    <li><strong>Google:</strong> if you sign in with Google, it identifies you and gives us the data described above; in that step Google acts on its own behalf, under its own policy. Also, emails with your code are sent through Gmail’s sending service, from a Gmail account belonging to the data controller: Google receives your email address, the code and the text of the message, and keeps a copy of each email in that account’s Sent folder (see <a href="#retention">How long we keep it</a>).</li>
+    <li><strong>Microsoft (Dev Tunnels):</strong> at this stage, messages coming in from WhatsApp go through a Microsoft tunnel to reach our server. Your number, your profile name and the text of your messages pass through that tunnel.</li>
+    <li><strong>Your email provider</strong> receives the emails we send you.</li>
+  </ul>
+  <p>Within Servicios Ya, people who administer it and have the right permission can see account details: email, number, name, whether the account is active, roles and creation date. They can’t see your WhatsApp messages or your sign-in history.</p>
+</section>
+
+<section aria-labelledby="storage">
+  <h2 id="storage">Where your data is stored</h2>
+  <ul>
+    <li>Today, at this early stage, the Servicios Ya database is on a computer owned by the data controller, in Argentina.</li>
+    <li>WhatsApp messages reach that computer through the Microsoft tunnel, which uses a server in Brazil.</li>
+    <li>When the service moves to permanent servers, we’ll update this policy with the provider and the country before moving your data.</li>
+  </ul>
+
+  <h3>Data outside Argentina</h3>
+  <p>Some providers handle your data outside Argentina:</p>
+  <ul>
+    <li>Meta processes WhatsApp messages in its data centers, which may be outside Argentina (for example, in the United States).</li>
+    <li>Google, based in the United States, handles the data for signing in with Google and the emails sent through Gmail, including the copy kept in the account that sends them.</li>
+    <li>The Microsoft tunnel uses a server in Brazil.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="retention">
+  <h2 id="retention">How long we keep it</h2>
+  <p>In our database, only the text of WhatsApp messages has an automatic deletion period today. Everything else is kept until you ask us to delete it (see <a href="#delete-your-data">How to delete your data</a>).</p>
+  <dl class="plazos">
+    <div>
+      <dt>Account data (email, number, name, language, time zone, roles and Google link)</dt>
+      <dd>For as long as you have the account. If the account is deleted, the data stays stored, hidden, until you ask us to erase it.</dd>
+    </div>
+    <div>
+      <dt>Sign-in codes</dt>
+      <dd>A code stops working after 10 minutes or once it’s used. The record of the request (without the code) has no automatic deletion period today.</dd>
+    </div>
+    <div>
+      <dt>Sign-in links from the bot</dt>
+      <dd>They work once and expire after 10 minutes. The record (without the link) has no automatic deletion period today.</dd>
+    </div>
+    <div>
+      <dt>Copies of the emails we send you</dt>
+      <dd>They stay in the Sent folder of the Gmail account that sends them, with your email address and the code (which expires after 10 minutes), until we delete them. No automatic deletion period today.</dd>
+    </div>
+    <div>
+      <dt>Sign-in history (including IP address and browser details)</dt>
+      <dd>No automatic deletion period today. It’s kept even if the account is deleted, because it’s a security record.</dd>
+    </div>
+    <div>
+      <dt>Text of WhatsApp messages</dt>
+      <dd>90 days. After that the text is deleted and a record of the message remains: its date, type and delivery status.</dd>
+    </div>
+    <div>
+      <dt>WhatsApp contact (number, identifier and profile name)</dt>
+      <dd>No automatic deletion period today, even if you have no account.</dd>
+    </div>
+    <div>
+      <dt>Session</dt>
+      <dd>The session cookie lasts 30 days and is renewed as you use the service. The website’s access grants last 15 minutes and renew automatically while you use the service. The record of those grants stays in the database, with no automatic deletion period today.</dd>
+    </div>
+    <div>
+      <dt>IP address for rate limits</dt>
+      <dd>Between 1 and 15 minutes, in memory only.</dd>
+    </div>
+    <div>
+      <dt>Technical logs and traces</dt>
+      <dd>Day-to-day logs and diagnostic traces stay only in the memory of the computer running the service and are discarded when it shuts down. Warnings and errors are also kept in that computer’s Windows event log until Windows replaces them with newer ones. The database engine keeps its own error log, which may include a value from the operation that failed (for example, a duplicate email address or number) and is kept for as long as the database container exists. None of these has a fixed deletion period.</dd>
+    </div>
+  </dl>
+</section>
+
+<section aria-labelledby="security">
+  <h2 id="security">How we protect it</h2>
+  <ul>
+    <li><strong>Everything travels encrypted:</strong> between your browser and the service (HTTPS), and between the service and its providers.</li>
+    <li><strong>No passwords:</strong> you sign in with a one-time code or link, or with Google.</li>
+    <li><strong>Codes and links aren’t stored in our database:</strong> only a fingerprint (a “hash”) that lets us check them but can’t be turned back into the code or link. They expire after 10 minutes, work only once, and each code allows up to 5 attempts. The copy of each email kept in Gmail does include the code (see <a href="#retention">How long we keep it</a>).</li>
+    <li><strong>Limits:</strong> up to 5 codes every 15 minutes for the same email or number, a daily cap on WhatsApp codes and limits per IP address. After 10 failed attempts in a row, the account is locked for 15 minutes.</li>
+    <li><strong>Verified messages:</strong> we check Meta’s signature on every message coming in from WhatsApp and discard any without it.</li>
+    <li><strong>Records without secrets:</strong> in stored messages, the code is replaced by the placeholder “[código]” and the sign-in link isn’t stored. The sign-in history keeps the reason a sign-in failed, never the code that was typed.</li>
+    <li><strong>Sessions:</strong> the website’s credentials live in the tab’s memory, not in browser storage, and the session cookie can’t be read by the page’s code. When you sign out, one of them passes through the page address and may stay in your browser history (see <a href="#cookies">Cookies and browser storage</a>). If an account is deactivated or deleted, its sessions end immediately.</li>
+    <li><strong>Permission-based access:</strong> only people with the right permission can see and manage accounts.</li>
+    <li><strong>Keep your links to yourself:</strong> the sign-in link the bot sends shows, before you sign in, which account it belongs to (your name or email, and your masked number). Don’t share it.</li>
+  </ul>
+  <p>Found a security issue? Email <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>.</p>
+</section>
+
+<section aria-labelledby="cookies">
+  <h2 id="cookies">Cookies and browser storage</h2>
+  <p>The Servicios Ya website doesn’t use advertising or analytics cookies, and it doesn’t load anything from other sites: no fonts, no scripts, no pixels. It only uses what’s needed for you to sign in.</p>
+
+  <h3>Cookies</h3>
+  <ul>
+    <li><strong>Session cookie:</strong> keeps you signed in. It lasts 30 days, renews as you use the service and survives closing the browser. It’s deleted when you sign out. It’s only sent over HTTPS and the page’s code can’t read it.</li>
+    <li><strong>Google sign-in cookies:</strong> two temporary cookies that protect the round trip to Google. They last a few minutes and are deleted when sign-in finishes.</li>
+  </ul>
+
+  <h3>Browser storage</h3>
+  <ul>
+    <li><strong>Local storage (localStorage):</strong> your language and whether the side menu is open or collapsed. They stay until you clear the site’s data; signing out doesn’t remove them.</li>
+    <li><strong>Tab storage (sessionStorage):</strong> temporary sign-in data: a security value, the page to return to and, if signing in with Google fails, the error code. It’s deleted once used or when you close the tab.</li>
+    <li><strong>Tab history:</strong> the email or number you type to request a code is kept in that tab’s history (not in the page address) so it can be verified and resent. It goes away when you close the tab, unless your browser restores it.</li>
+    <li><strong>Session credentials:</strong> they live in the tab’s memory and aren’t saved in browser storage. The exception is signing out: so the service knows which session to end, the website sends it the credential that says who you are (the “ID token”) inside the page address. That credential contains your user ID in the system, your email if you have one, your name (or, if you haven’t set one, your email or number) and your roles, so that address may stay in your browser history. It can’t be used to sign in to the service.</li>
+  </ul>
+  <p>Since all of this is needed to sign in, we don’t ask for permission to use it. If you block cookies, you may not be able to sign in.</p>
+  <p>This page uses no cookies or scripts. It’s hosted on GitHub Pages, and GitHub may log the IP address of visitors.</p>
+</section>
+
+<section aria-labelledby="rights">
+  <h2 id="rights">Your rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> your data: find out what data we hold about you. It’s free every six months, or sooner if you have a legitimate interest. We reply within 10 calendar days. You can see part of it in My profile (your email, name, language, time zone and last sign-in). For the rest, such as your sign-in history or your WhatsApp messages, ask us by email.</li>
+    <li><strong>Correct</strong> it: fix or update your data. You can change your name, language and time zone yourself in My profile. To correct your email or number, write to us. We do it within 5 business days, free of charge.</li>
+    <li><strong>Delete</strong> it: ask us to erase your data, free of charge, within 5 business days (see <a href="#delete-your-data">How to delete your data</a>). The law allows us to keep a piece of data when there’s a legal obligation to keep it or when erasing it would harm other people’s rights; if that happens, we’ll explain why.</li>
+    <li><strong>Withdraw your consent</strong> at any time, without undoing what was done before.</li>
+  </ul>
+
+  <h3 id="how-to-ask">How to ask</h3>
+  <p>Email <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>. You don’t need a form: tell us what you’re asking for and which email or number you use with Servicios Ya.</p>
+  <p>Before we reply, we check that the request really comes from you, so we don’t hand over or erase your data at someone else’s request. For example, we may ask you to write from your account’s email address or to message the bot from your number. We only ask for what’s needed for that.</p>
+  <p>If we don’t reply in time or you’re not satisfied with our answer, you can file a complaint with Argentina’s Agency for Access to Public Information (see <a href="#authority">Supervisory authority</a>).</p>
+</section>
+
+<section aria-labelledby="delete-your-data">
+  <h2 id="delete-your-data">How to delete your data</h2>
+  <p>You can ask us to delete your data at any time, whether or not you have an account: for example, if you only messaged the bot or requested a code. Today this can’t be done from the website or from the bot: you ask by email.</p>
+  <ol>
+    <li>Email <a href="mailto:ezequielellena_003@hotmail.com?subject=Delete%20my%20data">ezequielellena_003@hotmail.com</a> with the subject “Delete my data”.</li>
+    <li>Tell us which email address or WhatsApp number you used with Servicios Ya.</li>
+    <li>We check that the request is yours (see <a href="#how-to-ask">How to ask</a>) and complete it within 5 business days.</li>
+  </ol>
+
+  <h3>What we do</h3>
+  <ul>
+    <li><strong>Your account stops working right away.</strong> We delete it: it disappears from the system, can no longer be used to sign in, all your sessions end immediately and any pending sign-in links are cancelled.</li>
+    <li><strong>We erase the rest by hand.</strong> Deleting an account in the system hides and blocks it, but doesn’t yet erase its data from the database. So we erase what remains by hand. In the database: your account data, your Google link, your sign-in history, the codes and links that were requested, your session records and, if you messaged the bot, your WhatsApp contact and your messages. In the Gmail account that sends the emails: the copies of the ones we sent you, including from its trash.</li>
+    <li><strong>We tell you what we did.</strong> Our reply says what we erased and, if we kept anything, what it is and why.</li>
+  </ul>
+
+  <h3>What’s outside our control</h3>
+  <ul>
+    <li>Your chat with the bot stays in your WhatsApp until you delete it, and the emails we sent you stay in your inbox.</li>
+    <li>Meta keeps WhatsApp messages on its side for a while as part of delivering them (according to its documentation, up to 30 days).</li>
+    <li>Google applies its own policy to your Google account.</li>
+  </ul>
+  <p>Deleting your data doesn’t always stop WhatsApp messages: see <a href="#stop-messages">If you don’t want any more messages</a>.</p>
+</section>
+
+<section aria-labelledby="minors">
+  <h2 id="minors">Minors</h2>
+  <p>Servicios Ya is for people aged 18 and over. We don’t verify the age of the people who use it. If you’re the parent or guardian of someone under 18 and you believe they gave us their data, email <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a> and we’ll delete it as explained in <a href="#delete-your-data">How to delete your data</a>.</p>
+</section>
+
+<section aria-labelledby="changes">
+  <h2 id="changes">Changes to this policy</h2>
+  <p>If we change this policy, we’ll publish the new version at this same address, with its effective date at the top. Before we add a new type of data, a new use or a new provider, we’ll update this policy.</p>
+</section>
+
+<section aria-labelledby="contact">
+  <h2 id="contact">Contact</h2>
+  <p>For questions about this policy, to exercise your rights or to report a security issue, write to Ezequiel Ellena at <a href="mailto:ezequielellena_003@hotmail.com">ezequielellena_003@hotmail.com</a>. The WhatsApp bot doesn’t handle these requests.</p>
+</section>
+
+<section aria-labelledby="authority">
+  <h2 id="authority">Supervisory authority</h2>
+  <p>If you believe we haven’t respected your rights, you can file a complaint with Argentina’s Agency for Access to Public Information (Agencia de Acceso a la Información Pública, AAIP), the body that enforces Law 25,326 on Personal Data Protection. See <a href="https://www.argentina.gob.ar/servicio/denunciar-incumplimientos-de-la-ley-de-proteccion-de-datos-personales" hreflang="es">how to file a complaint with the AAIP</a> (in Spanish).</p>
+  <p>Argentine law requires the following notice. The original, in Spanish, is the official text:</p>
+  <blockquote class="leyenda">
+    <p lang="es"><span class="label" lang="en">Official text</span>LA AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales</p>
+    <p><span class="label">Unofficial translation</span>The Agency for Access to Public Information, as the supervisory authority under Law No. 25,326, has the power to handle complaints and claims filed by anyone whose rights are affected by a breach of the rules in force on personal data protection.</p>
+  </blockquote>
+  <p class="fuente">Notice required by <a href="https://www.argentina.gob.ar/normativa/nacional/norma-307621/texto" hreflang="es">AAIP Resolution 14/2018</a>, article 3.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Servicios Ya · Privacy Policy · Effective September 23, 2026</p>
+  <p><a href="../" hreflang="es" lang="es">Leer en español</a></p>
+</footer>
+
+</div>
+</body>
+</html>
