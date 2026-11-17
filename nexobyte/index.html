@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Política de privacidad · Nexobyte</title>
+<meta name="description" content="Qué datos personales trata Nexobyte cuando se comunica con vos por WhatsApp o por correo, para qué, con quién los comparte y cómo ver, corregir o eliminar tus datos.">
+<link rel="canonical" href="https://ezeellena2.github.io/privacidad/nexobyte/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Política de privacidad · Nexobyte">
+<meta property="og:description" content="Qué datos personales trata Nexobyte y cómo ver, corregir o eliminar tus datos.">
+<meta property="og:url" content="https://ezeellena2.github.io/privacidad/nexobyte/">
+<meta property="og:locale" content="es_AR">
+<style>
+:root {
+  --bg: #fcfcfa;
+  --text: #1c1c1a;
+  --muted: #53534d;
+  --accent: #0a5bb0;
+  --border: #dedcd4;
+  --surface: #f2f1ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151514;
+    --text: #ecebe6;
+    --muted: #b3b2aa;
+    --accent: #8cbcff;
+    --border: #3a3935;
+    --surface: #1f1f1d;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 70ch; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 40rem) { .wrap { padding: 0 24px; } }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.skip {
+  position: absolute; left: 16px; top: -100px;
+  background: var(--bg); color: var(--accent);
+  padding: 8px 12px; border: 2px solid var(--accent); border-radius: 6px;
+}
+.skip:focus { top: 8px; }
+.topbar {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 8px 16px; padding: 16px 0; border-bottom: 1px solid var(--border);
+}
+.service { margin: 0; font-weight: 650; letter-spacing: 0.01em; }
+.lang { margin: 0; }
+h1 {
+  font-size: clamp(1.9rem, 1.4rem + 2.2vw, 2.6rem);
+  line-height: 1.15; letter-spacing: -0.01em;
+  margin: 1.6rem 0 0.6rem;
+}
+.meta { margin: 0.15rem 0; color: var(--muted); }
+.meta strong { color: var(--text); font-weight: 600; }
+.lead { font-size: 1.125rem; margin: 1.4rem 0 0; }
+h2 {
+  font-size: 1.45rem; line-height: 1.25;
+  margin: 2.6rem 0 0.8rem; padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 16px;
+}
+h3 { font-size: 1.1rem; line-height: 1.3; margin: 1.7rem 0 0.4rem; scroll-margin-top: 16px; }
+p { margin: 0.8rem 0; }
+ul, ol { padding-left: 1.3em; margin: 0.8rem 0; }
+li + li { margin-top: 0.4em; }
+strong { font-weight: 650; }
+.summary {
+  margin-top: 2rem; padding: 4px 20px 8px;
+  background: var(--surface); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0;
+}
+.summary h2 { border-top: 0; margin-top: 0.8rem; padding-top: 0; font-size: 1.2rem; }
+.toc h2 { font-size: 1.2rem; }
+.toc ol { margin: 0; }
+.toc li { break-inside: avoid; margin: 0.2em 0; }
+@media (min-width: 44rem) { .toc ol { columns: 2; column-gap: 2.5rem; } }
+dl.plazos { margin: 1rem 0 0; }
+dl.plazos > div { padding: 12px 0; border-top: 1px solid var(--border); }
+dl.plazos > div:last-child { border-bottom: 1px solid var(--border); }
+dl.plazos dt { font-weight: 650; }
+dl.plazos dd { margin: 4px 0 0; }
+blockquote.leyenda {
+  margin: 1.2rem 0 0.4rem; padding: 14px 20px;
+  background: var(--surface); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0;
+}
+blockquote.leyenda p { margin: 0; }
+.fuente { margin-top: 0.4rem; font-size: 0.95rem; color: var(--muted); }
+footer {
+  margin-top: 3rem; padding: 20px 0 40px;
+  border-top: 1px solid var(--border); color: var(--muted); font-size: 0.95rem;
+}
+footer p { margin: 0.3rem 0; }
+@media print {
+  :root { --bg: #fff; --text: #000; --muted: #333; --accent: #000; --border: #999; --surface: #fff; }
+  body { font-size: 11pt; line-height: 1.45; }
+  .skip, .lang, .toc { display: none; }
+  .wrap { max-width: none; padding: 0; }
+  a { text-decoration: underline; }
+  main a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.9em; }
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+  li, dl.plazos > div, blockquote { break-inside: avoid; page-break-inside: avoid; }
+  .summary, blockquote.leyenda { border: 1px solid #999; }
+  @page { margin: 18mm; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="wrap">
+
+<header>
+  <div class="topbar">
+    <p class="service">Nexobyte</p>
+  </div>
+  <h1>Política de privacidad</h1>
+  <p class="meta">Vigente desde el <time datetime="2026-11-17">17 de noviembre de 2026</time></p>
+  <p class="meta">Responsable: <strong>Gustavo Miguel Antonietti</strong>, CEO de Nexobyte</p>
+  <p class="meta">Domicilio: Tancacha, Córdoba, Argentina · Tel. <a href="tel:+5493571523235">+54 9 3571 52-3235</a></p>
+</header>
+
+<main id="contenido">
+
+<p class="lead">Esta política explica qué datos personales trata Nexobyte cuando se comunica con vos por WhatsApp o por correo electrónico, para qué los usa, con quién los comparte, cuánto tiempo los guarda y cómo podés ejercer tus derechos.</p>
+
+<section class="summary" aria-labelledby="resumen">
+  <h2 id="resumen">En pocas palabras</h2>
+  <ul>
+    <li>Usamos tus datos para atenderte, darte soporte y mandarte avisos y documentos relacionados con los servicios que te prestamos.</li>
+    <li>No vendemos tus datos ni los usamos para publicidad de terceros.</li>
+    <li>Por WhatsApp te escribimos si sos cliente o nos diste tu número, y siempre podés pedirnos que dejemos de hacerlo.</li>
+    <li>Los mensajes de WhatsApp pasan por Meta, la empresa dueña de WhatsApp.</li>
+    <li>Podés pedir ver, corregir o eliminar tus datos por nuestro <a href="https://nexobyte.com.ar/contacto/">formulario de contacto</a> o al <a href="tel:+5493571523235">+54 9 3571 52-3235</a>.</li>
+  </ul>
+</section>
+
+<nav class="toc" aria-labelledby="indice">
+  <h2 id="indice">Contenido</h2>
+  <ol>
+    <li><a href="#responsable">Quién es el responsable</a></li>
+    <li><a href="#datos">Qué datos tratamos</a></li>
+    <li><a href="#usos">Para qué los usamos</a></li>
+    <li><a href="#base-legal">Por qué podemos usarlos</a></li>
+    <li><a href="#whatsapp">WhatsApp</a></li>
+    <li><a href="#compartir">Con quién los compartimos</a></li>
+    <li><a href="#transferencia">Datos fuera de la Argentina</a></li>
+    <li><a href="#conservacion">Cuánto tiempo los guardamos</a></li>
+    <li><a href="#seguridad">Cómo los protegemos</a></li>
+    <li><a href="#derechos">Tus derechos</a></li>
+    <li><a href="#eliminar-datos">Cómo eliminar tus datos</a></li>
+    <li><a href="#cambios">Cambios a esta política</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#autoridad">Autoridad de control</a></li>
+  </ol>
+</nav>
+
+<section aria-labelledby="responsable">
+  <h2 id="responsable">Quién es el responsable</h2>
+  <p>Nexobyte desarrolla software y presta servicios de soporte y consultoría a empresas, principalmente del sector agropecuario.</p>
+  <p>El responsable de tus datos es <strong>Gustavo Miguel Antonietti</strong>, CEO de Nexobyte, con domicilio en Tancacha, Córdoba, Argentina. Es quien decide para qué y cómo se usan tus datos, y quien atiende tus pedidos. Podés contactarlo por el <a href="https://nexobyte.com.ar/contacto/">formulario de contacto</a> o al <a href="tel:+5493571523235">+54 9 3571 52-3235</a>.</p>
+</section>
+
+<section aria-labelledby="datos">
+  <h2 id="datos">Qué datos tratamos</h2>
+
+  <h3>Los que nos das vos</h3>
+  <ul>
+    <li><strong>Tus datos de contacto:</strong> nombre, número de teléfono o de WhatsApp y correo electrónico.</li>
+    <li><strong>Los datos de tu empresa</strong>, si sos cliente: razón social, CUIT, domicilio y las personas de contacto que nos indiques.</li>
+    <li><strong>Lo que nos escribís</strong> por WhatsApp o por correo, incluidos los archivos que nos mandes.</li>
+  </ul>
+
+  <h3>Los que llegan de WhatsApp</h3>
+  <p>Cuando nos escribís o te mandamos un mensaje, WhatsApp (Meta) nos pasa:</p>
+  <ul>
+    <li><strong>Quién sos en WhatsApp:</strong> tu número, el nombre de tu perfil y un identificador que WhatsApp le asigna a tu cuenta para este negocio.</li>
+    <li><strong>Tus mensajes:</strong> el texto, los botones que tocás y los archivos que mandás (fotos, documentos, audios).</li>
+    <li><strong>El estado de nuestros mensajes:</strong> si se enviaron, si te llegaron, si los leíste o si fallaron, y cuándo.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="usos">
+  <h2 id="usos">Para qué los usamos</h2>
+  <ul>
+    <li>Responder tus consultas y darte soporte técnico.</li>
+    <li>Mandarte avisos sobre los servicios que te prestamos: novedades, actualizaciones, vencimientos, recordatorios o cambios que te afecten.</li>
+    <li>Mandarte documentos relacionados con esos servicios, como comprobantes o constancias.</li>
+    <li>Saber si nuestros mensajes te llegaron, para no repetirlos ni dejar de mandarte algo importante.</li>
+    <li>Cumplir con nuestras obligaciones legales, contables e impositivas.</li>
+  </ul>
+  <p>No usamos tus datos para tomar decisiones automáticas sobre vos ni para armar perfiles con fines publicitarios.</p>
+</section>
+
+<section aria-labelledby="base-legal">
+  <h2 id="base-legal">Por qué podemos usarlos</h2>
+  <p>Según el artículo 5 de la Ley 25.326 de Protección de Datos Personales, usamos tus datos:</p>
+  <ul>
+    <li><strong>Porque hay una relación comercial con vos</strong> o con la empresa para la que trabajás, y los datos son necesarios para prestarte el servicio.</li>
+    <li><strong>Porque nos diste tu consentimiento</strong>, por ejemplo al escribirnos o al darnos tu número para que te contactemos. Podés retirarlo cuando quieras.</li>
+    <li><strong>Porque una ley nos obliga</strong>, por ejemplo a guardar la documentación contable e impositiva.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="whatsapp">
+  <h2 id="whatsapp">WhatsApp</h2>
+  <p>Usamos la plataforma WhatsApp Business de Meta (WhatsApp Cloud API) para mandar y recibir mensajes desde nuestro número oficial. Los mensajes viajan cifrados entre tu teléfono y los servidores de Meta, y desde ahí llegan a nuestros sistemas.</p>
+  <ul>
+    <li><strong>Cuándo te escribimos:</strong> cuando sos cliente nuestro o nos diste tu número, y cuando nos escribiste antes. Los mensajes que iniciamos nosotros usan plantillas que Meta revisa y aprueba.</li>
+    <li><strong>Quién lee tus mensajes:</strong> las personas de Nexobyte que atienden consultas y soporte.</li>
+  </ul>
+
+  <h3 id="dejar-de-recibir">Si no querés recibir más mensajes</h3>
+  <p>Respondé el mensaje pidiéndonos que no te escribamos más, o avisanos por el <a href="https://nexobyte.com.ar/contacto/">formulario de contacto</a>. Dejamos de mandarte mensajes iniciados por nosotros, salvo que vuelvas a escribirnos. También podés bloquear nuestro número desde WhatsApp en cualquier momento.</p>
+</section>
+
+<section aria-labelledby="compartir">
+  <h2 id="compartir">Con quién los compartimos</h2>
+  <p>No vendemos, alquilamos ni cedemos tus datos. Solo los reciben estos terceros, y solo en lo necesario:</p>
+  <ul>
+    <li><strong>Meta (WhatsApp):</strong> manda y recibe los mensajes. Recibe tu número y el contenido de cada mensaje, y los trata según sus <a href="https://www.whatsapp.com/legal/business-terms">condiciones para empresas</a>.</li>
+    <li><strong>Los proveedores que alojan nuestros sistemas y nuestro correo:</strong> guardan y procesan los datos por cuenta nuestra, sin usarlos para fines propios.</li>
+    <li><strong>Autoridades</strong>, cuando una ley o una orden judicial nos obliga a entregarlos.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="transferencia">
+  <h2 id="transferencia">Datos fuera de la Argentina</h2>
+  <p>Meta procesa los mensajes de WhatsApp en servidores ubicados fuera de la Argentina, por ejemplo en Estados Unidos. Por eso, al comunicarte con nosotros por WhatsApp, tus datos se transfieren a esos países, con las garantías que Meta ofrece en sus condiciones para empresas.</p>
+</section>
+
+<section aria-labelledby="conservacion">
+  <h2 id="conservacion">Cuánto tiempo los guardamos</h2>
+  <p>Guardamos tus datos mientras dure la relación comercial o mientras los necesitemos para atender tu consulta. Después los conservamos solo el tiempo que exigen las leyes contables, impositivas o de defensa de nuestros derechos, y luego los eliminamos.</p>
+  <p>Meta conserva por su cuenta los mensajes de WhatsApp durante un tiempo, como parte del envío (según su documentación, hasta 30 días).</p>
+</section>
+
+<section aria-labelledby="seguridad">
+  <h2 id="seguridad">Cómo los protegemos</h2>
+  <p>Solo acceden a tus datos las personas de Nexobyte que los necesitan para su trabajo. Usamos conexiones cifradas para comunicarnos con WhatsApp y guardamos las credenciales de acceso de forma protegida. Ningún sistema es completamente seguro: si detectamos un incidente que afecte tus datos, te avisamos.</p>
+</section>
+
+<section aria-labelledby="derechos">
+  <h2 id="derechos">Tus derechos</h2>
+  <p>Tenés derecho a:</p>
+  <ul>
+    <li><strong>Acceder</strong> a tus datos: saber qué datos tenemos de vos. Es gratis cada seis meses, o antes si tenés un interés legítimo. Te respondemos dentro de los 10 días corridos.</li>
+    <li><strong>Rectificarlos:</strong> corregir o actualizar tus datos, sin costo, dentro de los 5 días hábiles.</li>
+    <li><strong>Suprimirlos:</strong> pedir que eliminemos tus datos, sin costo, dentro de los 5 días hábiles (ver <a href="#eliminar-datos">Cómo eliminar tus datos</a>). La ley permite no borrar un dato cuando hay una obligación legal de conservarlo o cuando borrarlo perjudica derechos de otras personas; si pasa, te explicamos por qué.</li>
+    <li><strong>Retirar tu consentimiento</strong> en cualquier momento, sin que eso cambie lo que ya se hizo.</li>
+  </ul>
+
+  <h3 id="como-pedirlo">Cómo pedirlo</h3>
+  <p>Escribinos por el <a href="https://nexobyte.com.ar/contacto/">formulario de contacto</a> o llamá al <a href="tel:+5493571523235">+54 9 3571 52-3235</a>. Contanos qué pedís y con qué número o correo te comunicás con nosotros. Antes de responder, confirmamos que el pedido es tuyo, para no entregarle ni borrarle tus datos a otra persona.</p>
+  <p>Si no te respondemos a tiempo o la respuesta no te conforma, podés reclamar ante la Agencia de Acceso a la Información Pública (ver <a href="#autoridad">Autoridad de control</a>).</p>
+</section>
+
+<section aria-labelledby="eliminar-datos">
+  <h2 id="eliminar-datos">Cómo eliminar tus datos</h2>
+  <ol>
+    <li>Escribinos por el <a href="https://nexobyte.com.ar/contacto/">formulario de contacto</a>, con “Eliminar mis datos” al comienzo del mensaje.</li>
+    <li>Contanos con qué número de WhatsApp o con qué correo te comunicaste con nosotros.</li>
+    <li>Confirmamos que el pedido es tuyo y lo resolvemos dentro de los 5 días hábiles. En la respuesta te decimos qué borramos y, si conservamos algo por obligación legal, qué es y por qué.</li>
+  </ol>
+  <p>Lo que no depende de nosotros: el chat sigue en tu WhatsApp hasta que lo borres vos, los correos siguen en tu casilla y Meta conserva los mensajes durante el tiempo indicado en <a href="#conservacion">Cuánto tiempo los guardamos</a>.</p>
+</section>
+
+<section aria-labelledby="cambios">
+  <h2 id="cambios">Cambios a esta política</h2>
+  <p>Si cambiamos esta política, publicamos la nueva versión en esta misma dirección, con su fecha de vigencia arriba.</p>
+</section>
+
+<section aria-labelledby="contacto">
+  <h2 id="contacto">Contacto</h2>
+  <p>Para preguntas sobre esta política o para ejercer tus derechos, escribinos por el <a href="https://nexobyte.com.ar/contacto/">formulario de contacto</a> o llamá al <a href="tel:+5493571523235">+54 9 3571 52-3235</a>.</p>
+</section>
+
+<section aria-labelledby="autoridad">
+  <h2 id="autoridad">Autoridad de control</h2>
+  <p>Si creés que no respetamos tus derechos, podés hacer un reclamo ante la Agencia de Acceso a la Información Pública (AAIP), el organismo que controla que se cumpla la Ley 25.326 de Protección de Datos Personales. Mirá <a href="https://www.argentina.gob.ar/servicio/denunciar-incumplimientos-de-la-ley-de-proteccion-de-datos-personales">cómo hacer un reclamo ante la AAIP</a>.</p>
+  <blockquote class="leyenda">
+    <p>LA AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales</p>
+  </blockquote>
+  <p class="fuente">Texto informativo de la <a href="https://www.argentina.gob.ar/normativa/nacional/norma-307621/texto">Resolución 14/2018 de la AAIP</a>, artículo 3.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Nexobyte · Política de privacidad · Vigente desde el 17 de noviembre de 2026</p>
+</footer>
+
+</div>
+</body>
+</html>
